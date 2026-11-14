@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "double cover"
+  author: "Yair Mau"
+  repo-url: https://github.com/yairmau/double-cover/
+  favicon: archive/logo.png
+  chapters:
+    - index.qmd
+    - part: "lie algebra"
+      chapters:
+        - lie_algebra/basic_properties.ipynb
+        - lie_algebra/sl2.ipynb
+        - lie_algebra/real_forms_of_sl2.ipynb
+        - lie_algebra/su2_and_spinors.ipynb
+  sidebar:
+    collapse-level: 1
+    header: "[← Back to yairmau.com](https://yairmau.com/){.back-home}"
+    logo: archive/logo.png
+  search: true
+
+format:
+  html:
+    theme:
+      - flatly
+      - custom.scss
+    css: styles.css
+    fontsize: 1.2em
+    highlight-style: kate-custom.theme #kate #solarized # kate # tango # breeze # ayu # monokai # breezedark # espresso
+    include-in-header:
+      - includes.html
+    code-line-numbers: true
+    code-tools:
+      source: repo  # https://quarto.org/docs/output-formats/html-code.html#code-tools
+    callout-icon: false
+    fig-align: center
+    # the default MathJax rendering option yields ugly results, use katex
+    html-math-method: katex
