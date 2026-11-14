@@ -1,0 +1,87 @@
+# polarization and Jones vectors
+
+{{< iconify lucide construction >}} this page is under construction {{< iconify lucide construction >}}
+
+I'm working through eigenchris' *Spinors for Beginners* series, and I want to use this
+chapter to rebuild, in my own words, the first "physical" example he gives of a spinor:
+the polarization of a light wave. The reason I find this example so convincing as a
+starting point is that there is nothing quantum about it. A spinor shows up here as a
+convenient bookkeeping device for a completely classical phenomenon, which tells me that
+whatever makes something "a spinor" cannot be about quantum mechanics per se — it has to
+be about how an object transforms.
+
+## the electric field, stripped down
+
+A plane electromagnetic wave travelling along $z$ has an electric field confined to the
+$xy$-plane (it's a transverse wave, so there's no $z$-component to worry about). Writing
+the $y$-component of a vertically polarized wave as
+
+$$
+E_y(z,t) = A\cos(\omega t - kz + \phi),
+$$
+
+I can trade the cosine for a complex exponential and carry the real-part instruction
+around implicitly — this is the same trick used everywhere in AC circuit theory and
+optics:
+
+$$
+E_y(z,t) = \operatorname{Re}\Big[ A\, e^{i\phi}\, e^{i(\omega t - kz)} \Big].
+$$
+
+The combination $A e^{i\phi}$ is the only part of this expression that carries
+information about *this particular wave* as opposed to waves in general — the factor
+$e^{i(\omega t - kz)}$ is shared by every wave with this frequency and direction of
+travel, so it can be factored out and ignored. What's left, once I do the same thing for
+a horizontally polarized wave and add the two together, is a 2-component object:
+
+$$
+\mathbf{J} = \begin{pmatrix} A_H e^{i\phi_H} \\ A_V e^{i\phi_V} \end{pmatrix}.
+$$
+
+This is the Jones vector. It's a complete description of the polarization state of the
+wave — nothing about the "actual" travelling wave survives in it, only amplitudes and
+relative phases.
+
+## six special points
+
+If I restrict myself to unit-length Jones vectors (an overall scale doesn't change the
+polarization — more on that below), a few combinations have names worth remembering,
+because they're the ones that come up over and over in optics:
+
+| name | vector | picture |
+|---|---|---|
+| horizontal $H$ | $\begin{pmatrix}1\\0\end{pmatrix}$ | oscillates along $x$ |
+| vertical $V$ | $\begin{pmatrix}0\\1\end{pmatrix}$ | oscillates along $y$ |
+| diagonal $D$ | $\frac{1}{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix}$ | $45°$ line |
+| anti-diagonal $A$ | $\frac{1}{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix}$ | $-45°$ line |
+| left circular $L$ | $\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix}$ | field traces a circle, left-handed |
+| right circular $R$ | $\frac{1}{\sqrt2}\begin{pmatrix}1\\-i\end{pmatrix}$ | field traces a circle, right-handed |
+
+I like deriving $L$ and $R$ by brute force instead of taking them on faith: plug
+$\mathbf{J}=\frac{1}{\sqrt2}\begin{pmatrix}1\\i\end{pmatrix}$ into the travelling-wave
+formula, set $z=0$, $\omega=1$, and just walk $t$ through $0,\pi/2,\pi,3\pi/2$. The real
+part of the field visits $(1,0) \to (0,-1) \to (-1,0) \to (0,1)$ — a clockwise circle
+when viewed looking *into* the direction of travel, which is "left circular" by the
+optics convention (point your left thumb along the direction of travel; your fingers
+curl the way the field rotates).
+
+## what a Jones vector is *not* allowed to know
+
+Two facts turn out to be the whole story later on:
+
+1. **Overall phase is invisible.** Multiplying $\mathbf{J}$ by $e^{i\chi}$ for any real
+   $\chi$ just shifts the wave along $z$ — the polarization itself is untouched. So
+   $\mathbf{J}$ and $e^{i\chi}\mathbf{J}$ describe the same physical polarization state.
+2. **Overall scale is invisible** (once we care only about polarization and not
+   intensity). Doubling $\mathbf{J}$ doubles the brightness, not the shape of the
+   polarization ellipse.
+
+Together, these say that a polarization state is really an equivalence class of Jones
+vectors under $\mathbf{J} \sim c\,\mathbf{J}$ for any nonzero complex $c$. That is a much
+more interesting statement than it looks — it's exactly the equivalence relation that
+defines the complex projective line $\mathbb{CP}^1$, and it's the reason a 2-component
+*complex* object ends up needing only *two real numbers* (a point on a sphere) to
+specify it. I'll come back to this once the same pattern shows up for quantum spin
+states — chasing an identical piece of algebra across two completely different physical
+settings is, to me, the most convincing argument that "spinor" names a real mathematical
+structure rather than a quantum-mechanics curiosity.

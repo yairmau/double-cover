@@ -9,10 +9,21 @@ book:
   favicon: archive/logo/favicon-32.svg
   chapters:
     - index.qmd
-    - basic_properties.ipynb
-    - sl2.ipynb
-    - real_forms_of_sl2.ipynb
-    - su2_and_spinors.ipynb
+    - part: "math fundamentals"
+      chapters:
+        - math_fundamentals/det_exp_trace.ipynb
+        - math_fundamentals/conjugation.ipynb
+    - part: "spinors for beginners"
+      chapters:
+        - spinors_for_beginners/jones_vectors.qmd
+        - spinors_for_beginners/su2_rotations.qmd
+        - spinors_for_beginners/stern_gerlach.qmd
+        - spinors_for_beginners/flagpole_sphere.qmd
+    - part: "SL(2,C)"
+      chapters:
+        - sl2c/sl2.ipynb
+        - sl2c/real_forms_of_sl2.ipynb
+        - sl2c/su2_and_spinors.ipynb
   sidebar:
     collapse-level: 1
     header: "[← Back to yairmau.com](https://yairmau.com/){.back-home}"

@@ -1,0 +1,80 @@
+# Stern-Gerlach and quantum spin states
+
+{{< iconify lucide construction >}} this page is under construction {{< iconify lucide construction >}}
+
+The striking thing about this chapter, for me, is not the physics of the Stern-Gerlach
+experiment itself — it's that once the dust settles, the mathematics is *identical* to
+[the Jones-vector story](jones_vectors.qmd). Same two-component complex columns, same
+invisibility of overall phase and scale, same $SU(2)$ rotation group, same angle-doubling.
+Two completely different physical setups (a classical EM wave through crystal optics,
+and a beam of silver atoms through an inhomogeneous magnet) land on exactly the same
+piece of linear algebra. That convergence is the real argument that spinors are a
+mathematical structure worth naming, not a quirk of quantum theory.
+
+## what the experiment actually shows
+
+Send neutral silver atoms through an inhomogeneous magnetic field and measure their
+deflection. Classically, you'd expect a continuous spread of outcomes (every orientation
+of a tiny bar magnet deflects by a different amount). What you actually see is *two*
+spots, nothing in between. That's the experimental fact that forces angular momentum —
+specifically, the un-paired electron's intrinsic spin — to be quantized.
+
+## bra-ket bookkeeping
+
+Quantum states live in an abstract vector space, written as kets $|\psi\rangle$, with
+Hermitian conjugates (bras) $\langle\psi|$. Born's rule says the probability of measuring
+a system prepared in state $|a\rangle$ to collapse into state $|b\rangle$ is
+
+$$
+P(a \to b) = |\langle b | a \rangle|^2.
+$$
+
+Running the Stern-Gerlach beam through a $\hat z$-oriented magnet and then a second
+$\hat z$-magnet shows $|{+z}\rangle$ and $|{-z}\rangle$ are orthogonal, unit-norm states —
+exactly as expected, since "up" and "down" are mutually exclusive outcomes.
+
+## the $x$ and $y$ states are where it gets interesting
+
+Rotate the apparatus to point along $\hat x$ and repeat: you again get two outcomes,
+$|{+x}\rangle$ and $|{-x}\rangle$, each orthogonal and unit-norm. But now feed a
+$|{+x}\rangle$ beam into a $\hat z$-oriented magnet, and you get a $50/50$ split. Born's
+rule then pins down
+
+$$
+|{+x}\rangle = \tfrac{1}{\sqrt2}\big(|{+z}\rangle + |{-z}\rangle\big), \qquad
+|{-x}\rangle = \tfrac{1}{\sqrt2}\big(|{+z}\rangle - |{-z}\rangle\big).
+$$
+
+Repeating along $\hat y$ forces complex coefficients — real numbers alone can't give a
+second pair of states that's simultaneously $50/50$ against $z$ *and* orthogonal to the
+$x$-states already claimed:
+
+$$
+|{+y}\rangle = \tfrac{1}{\sqrt2}\big(|{+z}\rangle + i|{-z}\rangle\big), \qquad
+|{-y}\rangle = \tfrac{1}{\sqrt2}\big(|{+z}\rangle - i|{-z}\rangle\big).
+$$
+
+Lay these six states side by side with the six Jones vectors $H,V,D,A,L,R$ from the
+optics chapter and the dictionary is exact, component for component. That's not a loose
+analogy — the underlying linear algebra doesn't know or care which physical system it's
+describing.
+
+## why $U(2)$ is "too big" here as well
+
+Just as with Jones vectors, rotating a spin state with a unitary matrix leaves Born's
+rule probabilities unchanged if the matrix is multiplied by an overall phase — the phase
+exits the inner product via the bra's complex conjugation and squares away to $1$. So
+$U(2)$ over-describes the physical rotations, and we again cut the redundancy by
+demanding $\det U = 1$, landing on $SU(2)$ as the group that rotates spin states around
+the **Bloch sphere** (the quantum-mechanics name for the same sphere optics calls the
+Poincaré sphere).
+
+The payoff is the same angle-doubling as before, but now it's worth stating in the
+language this book is named after: physical rotations in 3D space form $SO(3)$, and the
+matrices that correctly transform spin-$\tfrac12$ states form $SU(2)$. The map
+$SU(2) \to SO(3)$ that sends a spinor rotation to the physical rotation it induces is
+exactly two-to-one — both $U$ and $-U$ in $SU(2)$ produce the same rotation in $SO(3)$,
+for the same reason $\mathbf{J}$ and $-\mathbf{J}$ represent the same polarization.
+$SU(2)$ is the **double cover** of $SO(3)$. Everything in this chapter and the last one
+is the two-to-one covering map, worked out by hand in a specific low-dimensional case
+before we have the Lie-theory language to say it in one line.

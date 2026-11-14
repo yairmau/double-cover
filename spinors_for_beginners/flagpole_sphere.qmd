@@ -1,0 +1,82 @@
+# flagpoles, and spinors as points on a projective line
+
+{{< iconify lucide construction >}} this page is under construction {{< iconify lucide construction >}}
+
+The last two chapters kept running into the same two facts: a spinor
+$\mathbf{J}=\begin{pmatrix}\alpha\\\beta\end{pmatrix}$ doesn't care about an overall phase,
+and it doesn't care about an overall (nonzero) scale. I want to take those two facts
+seriously as a *definition* rather than as a pair of annoying caveats, because doing so
+explains, in one stroke, both why a spinor can be drawn as a point on a sphere and why
+that sphere has the angle-doubling property baked in from the start.
+
+## throwing away two of the four real numbers
+
+$\alpha$ and $\beta$ are each complex, so naively a spinor needs four real numbers. But
+since $\mathbf J$ and $c\mathbf J$ (any nonzero complex $c$) are the *same* spinor, I'm
+free to pick $c = 1/\alpha$ and normalize the top entry to exactly $1$:
+
+$$
+\mathbf{J} = \begin{pmatrix}\alpha\\\beta\end{pmatrix} \;\sim\; \begin{pmatrix}1\\ \beta/\alpha\end{pmatrix}.
+$$
+
+Everything that matters about the spinor is contained in the single complex number
+$\beta/\alpha$ — two real numbers, not four. That's exactly enough to specify a point on
+a sphere (longitude and latitude), which is why the Poincaré/Bloch sphere picture works
+at all: it isn't a visualization trick bolted on afterward, it's a direct consequence of
+quotienting by an overall complex factor.
+
+## putting the two discarded numbers back as a flagpole
+
+It still feels wasteful to throw $\arg(\alpha)$ and $|\alpha|$ away completely, so
+eigenchris' picture keeps them visible: draw the spinor not as a bare point on the
+sphere, but as a **flagpole** planted at that point. The length of the pole encodes the
+overall scale we're ignoring, and the angle of a little flag at the top encodes the
+overall phase we're ignoring. Changing either one moves the flag or stretches the pole,
+but the *point where the pole meets the sphere* — the only part that is physically
+meaningful — never moves. I like this picture because it keeps the discarded information
+in view instead of pretending it never existed; it's a visual reminder that "spinor" is
+a specific quotient, not a mysterious new kind of number.
+
+## real projective line first, because it's easier to draw
+
+To see why this quotient construction forces the angle-doubling, it helps to step down
+to real numbers first. Take the $xy$-plane, put a screen at $x=1$, and project every
+point $(x,y)$ along the ray through the origin to wherever that ray crosses the screen,
+landing at $(1, y/x)$. The destination depends only on the ratio $y/x$ — so scaling
+$(x,y)$ by any nonzero real number doesn't move the projected point. This quotient space
+is the **real projective line**, $\mathbb{RP}^1$.
+
+Two features of this projection matter a lot:
+
+- Points with $x=0$ never hit the screen — they get sent to a single **point at
+  infinity**, which closes the line up into a loop.
+- Two points on *opposite* sides of a circle centered at the origin — i.e. related by an
+  overall factor of $-1$ — land on the *same* point of the screen, since $y/x$ is
+  unchanged by flipping the sign of both coordinates.
+
+That second bullet is the whole mechanism. Walk a point halfway around the circle and
+its projection sweeps across the *entire* screen (through infinity and back); walk it
+the rest of the way around and the projection repeats the same sweep. **One trip around
+the circle is two trips around the projective line.** This is the angle-doubling, with
+all the physics stripped away — it's pure projective geometry.
+
+## the complex version is the spinor sphere
+
+Doing the identical construction with a pair of *complex* numbers $(\alpha,\beta)$,
+projecting via the ratio $\beta/\alpha$, gives the **complex projective line**,
+$\mathbb{CP}^1$. It can't be drawn as literally as the real case (it would need four real
+dimensions), but the quotient is visualized the same way physicists already draw it: as
+the Riemann sphere, with $\alpha=0$ sent to the north pole ("point at infinity") and
+antipodal-under-scaling points identified. The Poincaré sphere and the Bloch sphere are
+the same object wearing different hats — both are $\mathbb{CP}^1$, decorated with
+whichever six physical states (polarizations, or spin states) happen to sit at
+convenient locations on it.
+
+So the cleanest definition I can give myself, after four chapters of examples, is: **a
+spinor is a point on $\mathbb{CP}^1$, i.e. an equivalence class of nonzero pairs of
+complex numbers under overall complex scaling.** Every angle-doubling fact we ran into —
+in optics, in Stern-Gerlach, and in the abstract $SU(2) \to SO(3)$ covering map — is a
+restatement of the fact that this quotient turns one full loop into two. The next step
+up the staircase is to stop treating that factor of two as special to low dimensions and
+instead build it out of Clifford algebras, where it will appear for free in any
+dimension.

@@ -1,0 +1,92 @@
+# rotating Jones vectors: U(2), SU(2), and the Poincaré sphere
+
+{{< iconify lucide construction >}} this page is under construction {{< iconify lucide construction >}}
+
+Having written polarization states as Jones vectors in [the previous chapter](jones_vectors.qmd),
+the natural next question is: what matrices are allowed to act on them? Physically, a
+wave plate rotates one polarization into another by delaying the vertical component
+relative to the horizontal one by some phase. Mathematically, I want to find the group of
+matrices that can represent *all* physically realizable polarization changes, and
+understand why it has to be $SU(2)$ rather than something bigger or smaller.
+
+## borrowing the logic from real rotations
+
+Before touching complex vectors, it's worth re-deriving the familiar case: what matrices
+$R$ preserve the length of a real 3D vector $v$? Length-squared is $v^\top v$, and
+requiring $(Rv)^\top(Rv) = v^\top v$ for *every* $v$ forces
+
+$$
+R^\top R = I.
+$$
+
+These are the orthogonal matrices, $O(3)$. Taking determinants of both sides gives
+$(\det R)^2 = 1$, so $\det R = \pm 1$: reflections get a $-1$, rotations get a $+1$.
+Restricting to $\det R = +1$ is what "special" means, and that's $SO(3)$.
+
+## the same logic, with complex entries
+
+A Jones vector has complex entries, so "length" has to mean $\mathbf{J}^\dagger\mathbf{J}$
+(Hermitian conjugate, not plain transpose) or I'd get a complex number out of a thing
+that's supposed to be a probability-like intensity. Demanding that a matrix $U$ preserve
+this quantity for every $\mathbf{J}$ gives, by the identical argument as above,
+
+$$
+U^\dagger U = I,
+$$
+
+the defining property of a **unitary** matrix. The $2\times2$ unitary matrices form the
+group $U(2)$. Taking the determinant of $U^\dagger U = I$ gives $|\det U|^2 = 1$, so
+$\det U$ is not forced to be $\pm1$ this time — it can be *any* unit-modulus complex
+number $e^{i\theta}$.
+
+This is the first place where the complex case genuinely differs from the real one, and
+it matters: a generic $U(2)$ matrix carries an unavoidable overall phase in its
+determinant. But I already know from the previous chapter that overall phase is
+physically invisible for Jones vectors. So $U(2)$ has redundancy built into it — many
+different $U(2)$ matrices produce the *same* physical rotation of the polarization
+ellipse, differing only by a phase that gets thrown away anyway.
+
+## picking a unique representative: SU(2)
+
+To remove the redundancy, I can always rescale any $U \in U(2)$ by $e^{-i\theta/2}$
+(where $\theta = \arg\det U$) to force its determinant to be exactly $1$, without
+changing the physical transformation it represents. The matrices with
+
+$$
+U^\dagger U = I, \qquad \det U = 1
+$$
+
+form $SU(2)$, and this is the group that acts on Jones vectors (and, as the next chapter
+shows, on quantum spin states) without any leftover ambiguity beyond the one we already
+knew about and chose to ignore.
+
+## the angle-doubling, finally made precise
+
+Here's the calculation that I think earns the name "spinor." Physically, $H$ and $V$
+polarizations are $90°$ apart in real space. But a half-wave plate — the device that
+swaps $H \leftrightarrow V$ — corresponds to a *full* $180°$ rotation of the Jones vector
+on the Poincaré sphere (it has to go $H \to D \to V$, a half-circle). Chasing this
+through:
+
+$$
+\text{physical angle } \theta \;\longleftrightarrow\; \text{Poincaré-sphere angle } 2\theta.
+$$
+
+This is why the $SU(2)$ matrices that implement wave-plate rotations are conventionally
+written with *half-angles*:
+
+$$
+U(\theta) = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix}
+$$
+
+for rotation about the $H/V$ axis, and structurally similar matrices (built from Pauli
+matrices, which will show up again when we get to Lie algebras) for rotations about the
+other two axes of the sphere.
+
+The thing I want to hold onto from this chapter is *where the factor of two actually
+comes from*. It isn't some mysterious property bolted onto spinors by fiat — it falls
+straight out of the fact that $(-1)\cdot\mathbf{J}$ and $\mathbf{J}$ are the same
+physical state. A rotation that looks like "half a turn" on the sphere of physical
+polarization ellipses is a "full turn" on the sphere of Jones-vector directions, because
+the latter sphere has already glued antipodal points together. Once you see the gluing,
+the factor of two stops being surprising.
