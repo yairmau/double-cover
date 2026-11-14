@@ -26,7 +26,9 @@ matter more than anything else when drafting or reviewing content:
    purely textual math reference. Prefer an OJS/Observable widget or a
    tikz/d3 diagram over a wall of equations whenever a geometric idea is being
    explained. See `_extensions/` for what's already wired in (tikz is used
-   for the Lie algebra diagrams).
+   for the Lie algebra diagrams). Building or debugging an OJS widget? Read
+   `archive/agent-notes/ojs-widgets.md` first — it covers a real footgun
+   where a widget silently renders as inert text instead of executing.
 
 ## Structure
 

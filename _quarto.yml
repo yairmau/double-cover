@@ -27,7 +27,7 @@ book:
   sidebar:
     collapse-level: 1
     header: "[← Back to yairmau.com](https://yairmau.com/){.back-home}"
-    logo: archive/logo/logo_30deg.svg
+    logo: archive/logo/logo.svg
   search: true
 
 format:
