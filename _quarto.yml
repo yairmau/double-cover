@@ -6,19 +6,17 @@ book:
   title: "double cover"
   author: "Yair Mau"
   repo-url: https://github.com/yairmau/double-cover/
-  favicon: archive/logo.png
+  favicon: archive/logo/favicon-32.svg
   chapters:
     - index.qmd
-    - part: "lie algebra"
-      chapters:
-        - lie_algebra/basic_properties.ipynb
-        - lie_algebra/sl2.ipynb
-        - lie_algebra/real_forms_of_sl2.ipynb
-        - lie_algebra/su2_and_spinors.ipynb
+    - basic_properties.ipynb
+    - sl2.ipynb
+    - real_forms_of_sl2.ipynb
+    - su2_and_spinors.ipynb
   sidebar:
     collapse-level: 1
     header: "[← Back to yairmau.com](https://yairmau.com/){.back-home}"
-    logo: archive/logo.png
+    logo: archive/logo/logo_30deg.svg
   search: true
 
 format:

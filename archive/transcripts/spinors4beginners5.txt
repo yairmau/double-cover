@@ -1,0 +1,558 @@
+https://youtu.be/T0V08u4t-cg
+
+Chapter 1: Review of Jones Vectors and Quantum States
+0:00
+0 seconds
+this is the final video where we'll be learning about the basic examples of spinners in physics in the last couple videos we've learned
+0:08
+8 seconds
+how both LightWave polarizations and Quantum spin States can be described mathematically by pairs of complex
+0:16
+16 seconds
+numbers called Spinners that rotate on a sphere with su2 matrices in this video we'll learn how to
+0:24
+24 seconds
+visualize Spinners as flag poles on a sphere and learn how Spinners are points on the complex projective line
+0:32
+32 seconds
+to begin let's review some of the basic facts about Jones vectors and Quantum spin State vectors
+0:40
+40 seconds
+a diagonally polarized wave is made up of equal amounts of horizontally and vertically polarized waves
+0:48
+48 seconds
+however if we phase shift the horizontally and vertically polarized Waves by the same amount all this does
+0:55
+55 seconds
+is shift the entire wave along the axis of travel the wave is still diagonally polarized
+1:02
+1 minute, 2 seconds
+so the polarization is unchanged so we know that multiplying A Jones vector by an overall phase does not
+1:10
+1 minute, 10 seconds
+change the polarization here's something else to consider if we take a diagonally polarized Jones vector
+1:19
+1 minute, 19 seconds
+and multiply it by two all this does is double the amplitude of the wave but the wave is still diagonally polarized
+1:28
+1 minute, 28 seconds
+so the polarization is unchanged so we've learned that multiplying A Jones vector by an overall scaling Factor does
+1:36
+1 minute, 36 seconds
+not change the polarization so polarizations are unchanged when we multiply a wave by any overall phase
+1:44
+1 minute, 44 seconds
+factor or any overall scaling factor and of course a scaling factor and a phase together can be used to describe any
+1:53
+1 minute, 53 seconds
+complex number this is just an alternative way of writing a complex number X Plus i y
+2:01
+2 minutes, 1 second
+so polarizations are unchanged when we multiply Jones vectors by a complex number
+2:08
+2 minutes, 8 seconds
+now let's look at Quantum spin states in the stern gearlock experiment we know that when we take a particle
+2:15
+2 minutes, 15 seconds
+with a given spin State and apply an inhomogeneous magnetic field the particle will exit the magnet as a
+2:22
+2 minutes, 22 seconds
+Quantum superposition of two outcome states that are split in the up and down directions I was a bit imprecise about
+2:30
+2 minutes, 30 seconds
+this in my last video but the states doesn't fully collapse into the spin up or spin down state until a measurement
+2:37
+2 minutes, 37 seconds
+is performed at a detector the probabilities for collapsing into a given state are given by the squared
+2:45
+2 minutes, 45 seconds
+magnitudes of the inner product of the States before and after the collapse this is called born's Rule
+2:53
+2 minutes, 53 seconds
+if we multiply our initial State vector by an overall phase and then look at the results of born's rule the complex phase
+3:02
+3 minutes, 2 seconds
+comes out and has a magnitude of one leaving the resulting probabilities unchanged
+3:08
+3 minutes, 8 seconds
+what this means is that any two State vectors that are related by a complex phase represent the same Quantum state
+3:16
+3 minutes, 16 seconds
+so Quantum states are unchanged by overall phase factors now let's consider multiplying a Quantum
+3:25
+3 minutes, 25 seconds
+State vector by the number two in many introductory quantum mechanics classes your professor might tell you
+3:33
+3 minutes, 33 seconds
+that this is not allowed because this can give us probabilities larger than one when we use born's rule professors
+3:41
+3 minutes, 41 seconds
+might tell you that it's required that all Quantum State vectors must have a length of one to ensure that the
+3:48
+3 minutes, 48 seconds
+probabilities of all possible collapsed States add up to one however we can actually allow Quantum
+3:57
+3 minutes, 57 seconds
+State vectors to have lengths larger or smaller than one if we make an appropriate change to born's rule
+4:05
+4 minutes, 5 seconds
+this new version of Bourne's rule contains a division by the squared Vector lengths which normalizes both
+4:13
+4 minutes, 13 seconds
+vectors to have a length of one with the newborns rule we can feel free to change the lengths of our state
+4:20
+4 minutes, 20 seconds
+vectors as we like as long as they are non-zero because the newborn's rule will normalize them to one for us
+4:29
+4 minutes, 29 seconds
+so if we multiply the first state vector by 2 we get a factor of 2 squared in the denominator which cancels with 2 squared
+4:38
+4 minutes, 38 seconds
+in the numerator leaving the probability result from born's rule unchanged so it's only the angle between states that
+4:47
+4 minutes, 47 seconds
+matters not the lengths of the state vectors so with the newborn's rule multiplying a
+4:54
+4 minutes, 54 seconds
+Quantum State vector by an overall phase by an overall scaling factor or both leaves the state unchanged
+Chapter 2: Flagpole Visualization of Spinors
+5:04
+5 minutes, 4 seconds
+so both Jones vectors for light waves and Quantum State vectors in the stern gerlock experiment can be written as a
+5:12
+5 minutes, 12 seconds
+pair of complex numbers and both of these can be multiplied by an overall scaling factor and an overall
+5:19
+5 minutes, 19 seconds
+complex phase without changing the state they represent we call these pairs of complex numbers
+5:27
+5 minutes, 27 seconds
+that don't care about overall complex multiplication spinners so we can write Spinners as a pair of
+5:35
+5 minutes, 35 seconds
+complex numbers Alpha and beta these two complex numbers are made up of four real numbers two scaling factors
+5:44
+5 minutes, 44 seconds
+and two phases this might make you think that Spinners require four real numbers to be
+5:51
+5 minutes, 51 seconds
+specified but since we are free to multiply a spinner by any complex number without changing it we can always
+5:59
+5 minutes, 59 seconds
+multiply by one over Alpha causing the top component to be one and making the bottom component the ratio
+6:07
+6 minutes, 7 seconds
+beta over Alpha so really there's only one complex number that's required to specify a
+6:14
+6 minutes, 14 seconds
+spinner since it is only the ratio of beta over Alpha that actually matters and this is a single complex number with
+6:23
+6 minutes, 23 seconds
+two real parameters this is why we're able to visualize Spinners as arrows on a sphere only two
+6:31
+6 minutes, 31 seconds
+real parameters are needed to specify them the longitude and the latitude the remaining two parameters the overall
+6:40
+6 minutes, 40 seconds
+phase and overall scaling are ignored however we can still visualize the overall phase and overall scaling if we
+6:49
+6 minutes, 49 seconds
+like using a flagpole visualization instead of drawing a spinner as an arrow
+6:57
+6 minutes, 57 seconds
+on this sphere we can instead draw it as a flag on a flagpole the orientation of this flag on the
+7:05
+7 minutes, 5 seconds
+flagpole represents the overall phase factor that we're ignoring we can also change the length of the flagpole to
+7:13
+7 minutes, 13 seconds
+represent the overall scale factor that we're ignoring so that it can be less than or greater than one as long as it's
+7:21
+7 minutes, 21 seconds
+not zero note that a specific spinner is only identified with the point where the
+7:28
+7 minutes, 28 seconds
+flagpole meets the sphere so changing the angle of the flag and changing the flagpole's length do not change which
+7:35
+7 minutes, 35 seconds
+spinner we're talking about we can see these factors mathematically if we write out our spinner as a
+7:43
+7 minutes, 43 seconds
+combination of two basis Spinners each with complex number coefficients if we multiply and divide the second
+7:51
+7 minutes, 51 seconds
+term by e to the I Phi 1 we can factor out e to the I Phi 1 from both terms and
+7:58
+7 minutes, 58 seconds
+bring it out in front if we take the Spinner's magnitude to be M we can multiply and divide both terms
+8:06
+8 minutes, 6 seconds
+by m then bring a factor M out in front the ratios A1 over M and A2 over M can
+8:15
+8 minutes, 15 seconds
+be visualized on a triangle like this A1 over m is just the cosine of this angle and A2 over m is just the sign of
+8:25
+8 minutes, 25 seconds
+this angle you'll notice that I've chosen to write this angle as Theta over 2. this is because in the original space the two
+8:34
+8 minutes, 34 seconds
+basis Spinners are 90 degrees apart but on this sphere where we ignore overall signs they are 180 degrees apart
+8:44
+8 minutes, 44 seconds
+so we need to take this angle on the sphere and divide it by 2 to get to the correct angle between the basis Spinners
+8:52
+8 minutes, 52 seconds
+in the original space so we can rewrite A1 over M as a cosine
+8:58
+8 minutes, 58 seconds
+and rewrite a 2 over M as a sign I'll also rewrite Phi 1 as Omega and
+9:06
+9 minutes, 6 seconds
+rewrites the phase difference Phi 2 minus Phi 1 as just Phi so we've Rewritten our two component
+9:14
+9 minutes, 14 seconds
+spinner like this and it has four real parameters M Omega Theta and Phi
+9:22
+9 minutes, 22 seconds
+the Theta and Phi parameters determine where the spinner points on the sphere Omega is the overall phase and
+9:31
+9 minutes, 31 seconds
+determines the angle of the flag on the flagpole and M which is the overall magnitude determines the length of the flagpole
+9:40
+9 minutes, 40 seconds
+the Omega and M parameters can be ignored since overall phases and overall scaling factors don't change the spinner
+9:49
+9 minutes, 49 seconds
+only the Theta and Phi parameters matter because they determine where the spinner points on the sphere
+9:56
+9 minutes, 56 seconds
+as an exercise you can try calculating the Theta Phi and Omega parameters for this spinner of length one that's been
+10:04
+10 minutes, 4 seconds
+rotated around and try checking that the flag orientations make sense
+Chapter 3: Real Projective Line
+10:12
+10 minutes, 12 seconds
+so Spinners are pairs of complex numbers where the overall multiplication by a non-zero complex number doesn't change
+10:20
+10 minutes, 20 seconds
+the spinner this probably seems very mysterious but there is a way we can understand Spinners better by realizing they are
+10:29
+10 minutes, 29 seconds
+members of the complex projective line the complex projective line is a bit confusing when you first see it so let's
+10:37
+10 minutes, 37 seconds
+start simple and look at projections in the ordinary two-dimensional space with real numbers which is the X Y plane
+10:46
+10 minutes, 46 seconds
+let's imagine that we have a vertical screen at the position x equals one and we want to project points onto this
+10:55
+10 minutes, 55 seconds
+screen one way to project points is to send them along parallel lines at right angles to the screen
+11:03
+11 minutes, 3 seconds
+this is called orthogonal projection and it Maps the point x y to the point 1 y
+11:11
+11 minutes, 11 seconds
+the y-coordinate stays the same but the x coordinate is forced to be one after the projection
+11:19
+11 minutes, 19 seconds
+with this projection objects retain their true vertical sizes after the projection
+11:26
+11 minutes, 26 seconds
+another type of projection is called perspective projection for this we put our I at the origin point and project
+11:34
+11 minutes, 34 seconds
+all points in the plane towards our eye using radial lines the locations where these radial lines
+11:42
+11 minutes, 42 seconds
+hit the screen are where the points end up after the projection with perspective projection the true
+11:50
+11 minutes, 50 seconds
+size of objects is not retained after the projection objects that are farther away from the screen will appear to shrink more than
+11:58
+11 minutes, 58 seconds
+objects that are closer to the screen with perspective projection all the points on this diagonal line through the
+12:08
+12 minutes, 8 seconds
+origin will be projected to this same specific point on our screen we normally write the equation of a line
+12:16
+12 minutes, 16 seconds
+as y equals MX plus b where m is the slope and B is the y-intercept
+12:23
+12 minutes, 23 seconds
+however since our projection lines go through the origin we have b equals zero and so the slope M of the line is equal
+12:32
+12 minutes, 32 seconds
+to Y over X this is true for any point on the line so all points on this line have the same
+12:40
+12 minutes, 40 seconds
+y over X ratio if we look at the point where this projection line crosses the screen at x
+12:47
+12 minutes, 47 seconds
+equals one we find that the Y value is the slope m so all X Y points on a given projection
+12:54
+12 minutes, 54 seconds
+line get projected to the point 1 M where m is just the ratio y over X
+13:03
+13 minutes, 3 seconds
+so the destination point will be completely determined by the ratio y over X this means that if we scale a point by
+13:11
+13 minutes, 11 seconds
+some overall scale factor a it will not change its destination point after the projection all this does is push the point outward
+13:20
+13 minutes, 20 seconds
+along the ray the scale factor will get canceled when we take the ratio between Y and X so it
+13:28
+13 minutes, 28 seconds
+doesn't affect the final destination of the point after projection we call this space after the projection
+13:35
+13 minutes, 35 seconds
+the real projective line rp1 now there are a couple of important
+13:42
+13 minutes, 42 seconds
+details to consider with the real projective line one thing to consider is this point here
+Chapter 4: Point at infinity + Opposite points on circle
+13:49
+13 minutes, 49 seconds
+on the y-axis where does this point get projected to on the screen tracing a radial line towards the origin
+13:57
+13 minutes, 57 seconds
+the resulting Ray points downward parallel to the screen and goes on forever so this point doesn't get projected to
+14:05
+14 minutes, 5 seconds
+the screen at all we say that points like this get projected to the point at Infinity
+14:13
+14 minutes, 13 seconds
+any point with a zero x value will get projected to this point at Infinity because the Y over X ratio involves
+14:21
+14 minutes, 21 seconds
+division by zero this point at Infinity can be reached by projecting downward along the y-axis or
+14:29
+14 minutes, 29 seconds
+upward along the y-axis so there is a single point at Infinity that can be reached by projecting infinitely in
+14:37
+14 minutes, 37 seconds
+either the positive or negative directions this point at Infinity sort of joins up
+14:44
+14 minutes, 44 seconds
+both infinite ends of the screen so that it forms a continuous loop this idea of a point at Infinity might
+14:53
+14 minutes, 53 seconds
+make you feel uncomfortable but this is a perfectly valid mathematical object in projective geometry
+15:00
+15 minutes
+it's just an extra point we include for projecting points parallel to the screen just remember that all X Y points with
+15:09
+15 minutes, 9 seconds
+the same y over X ratio get projected to the same point on the real projective line
+15:15
+15 minutes, 15 seconds
+and in the case of X Y points where the x coordinate is zero all of these are considered equivalent and are projected
+15:24
+15 minutes, 24 seconds
+to the point at Infinity although keep in mind the origin Point does not get projected anywhere and is
+15:32
+15 minutes, 32 seconds
+ignored for the real projective line the second thing I want you to consider is the left half of the plane behind our
+15:41
+15 minutes, 41 seconds
+eye that's at the origin it's important to remember that points behind our eye will also get projected
+15:49
+15 minutes, 49 seconds
+to the screen so if we look at this circle these two points on opposite sides of the circle
+15:55
+15 minutes, 55 seconds
+will get projected to the same point on the screen because they exist on the same line on the origin
+16:03
+16 minutes, 3 seconds
+any two points on opposite sides of a circle centered at the origin will get projected to the same point on the real
+16:12
+16 minutes, 12 seconds
+projective line the projection can't tell the difference between the positive version of a point and the negative version of a point
+16:20
+16 minutes, 20 seconds
+because in both cases the Y over X ratio is the same the projection doesn't care
+16:27
+16 minutes, 27 seconds
+about overall scale factors of negative one so if we take a semicircle and project
+16:34
+16 minutes, 34 seconds
+all of its points onto the screen we'll cover every single point on the screen including the point at Infinity
+16:43
+16 minutes, 43 seconds
+watch what happens to the projected Point as we travel along this circle the projected Point goes off to infinity
+16:51
+16 minutes, 51 seconds
+and then comes back after a half turn around the circle the next half turn on the circle corresponds to another loop
+16:59
+16 minutes, 59 seconds
+on the real projective line so one turn around the circle corresponds to two full turns around the
+17:06
+17 minutes, 6 seconds
+real projective line it's almost like the projection takes the circle and makes it curl around on
+17:13
+17 minutes, 13 seconds
+itself so that it wraps around twice instead of just once so that's the real projective line we
+17:21
+17 minutes, 21 seconds
+put a screen at x equals one and project all the points in the plane along radial lines connected to the origin
+17:30
+17 minutes, 30 seconds
+the destination points are completely determined by the ratio y over X and so overall scale values don't matter
+17:39
+17 minutes, 39 seconds
+points on the vertical axis are projected to the point at infinity and points on the opposite sides of a circle
+17:46
+17 minutes, 46 seconds
+will end up projected to the same place because projection destroys the difference between positive and negative
+17:53
+17 minutes, 53 seconds
+versions of points now it's possible to do this in higher Dimensions as well we get the real
+Chapter 5: Real Projective Plane
+18:00
+18 minutes
+projective plane rp2 by projecting all points in 3D space radially from the
+18:08
+18 minutes, 8 seconds
+origin onto a flat two-dimensional screen at x equals one in this case the resulting point on the
+18:16
+18 minutes, 16 seconds
+screen only depends on two real numbers the ratio y over X and the ratios at over X
+18:24
+18 minutes, 24 seconds
+we saw the real projective line is like a circle with opposite points made equivalent so it's like a semi-circle
+18:31
+18 minutes, 31 seconds
+where walking off one end teleports you to the other end the real projective plane is like a sphere with opposite points made
+18:40
+18 minutes, 40 seconds
+equivalent so it's like a half sphere where walking off the edge teleports you to the opposite Edge
+18:48
+18 minutes, 48 seconds
+we can use a similar approach for real projective spaces in higher dimensions but let's get back to Spinners and
+Chapter 6: Complex Projective Line
+18:57
+18 minutes, 57 seconds
+consider the complex projective line the complex projective line is very similar to the real projective line
+19:04
+19 minutes, 4 seconds
+except instead of dealing with a pair of real numbers that are unchanged by real number scaling we deal with a pair of
+19:12
+19 minutes, 12 seconds
+complex numbers that are unchanged by complex number scaling unfortunately it's basically impossible
+19:19
+19 minutes, 19 seconds
+to visualize a space of two complex numbers because this would involve four real dimensions
+19:27
+19 minutes, 27 seconds
+but the mathematical reasoning works the same as the real projective line we project our Alpha Beta points onto a
+19:35
+19 minutes, 35 seconds
+kind of screen located at Alpha equals one the position on the screen is entirely
+19:42
+19 minutes, 42 seconds
+determined by the ratio beta over Alpha points that have a coordinate of alpha equals zero will get projected to the
+19:50
+19 minutes, 50 seconds
+point at Infinity since this results in a ratio of beta over zero although we ignore the origin point when doing
+19:59
+19 minutes, 59 seconds
+projections after the projection we can no longer tell the difference between the positive version of a point and the negative
+20:07
+20 minutes, 7 seconds
+version of a point because they both have the exact same beta over Alpha ratio in fact we can't tell the difference
+20:15
+20 minutes, 15 seconds
+between any two points scaled by an overall amplitude and complex phase because these also go away when we take
+20:24
+20 minutes, 24 seconds
+the ratio beta over Alpha the flagpole sphere is how we visualize points in the complex projective line
+20:32
+20 minutes, 32 seconds
+with one of the sphere's poles being the point at Infinity the ratio beta over Alpha completely
+20:40
+20 minutes, 40 seconds
+determines the direction of the flagpole on the sphere we've seen this sphere called the point array sphere and the block sphere
+20:49
+20 minutes, 49 seconds
+but in the context of the complex projective line we call it the Riemann sphere if we go back to the six main Spinners
+20:58
+20 minutes, 58 seconds
+we've been looking at for the last few videos you'll notice that they are all completely defined by the ratio of their two components
+21:06
+21 minutes, 6 seconds
+the spinner with Alpha equals 0 represents the point at Infinity I'll briefly mention Mobius
+21:13
+21 minutes, 13 seconds
+Transformations which are General matrices that act on a spinner by treating the inputs and outputs as
+21:21
+21 minutes, 21 seconds
+single complex numbers given by the ratios of the spinner components we get this function here called a Mobius
+21:28
+21 minutes, 28 seconds
+transformation I'll talk about this more in future videos so we now have a good mathematical
+Chapter 7: Summary
+21:37
+21 minutes, 37 seconds
+description of what a spinner is it's a member of the complex projective line in other words it's a pair of complex
+21:45
+21 minutes, 45 seconds
+numbers that have been projected so that the overall scaling and overall phase Factor doesn't matter it's only the ratio of the two
+21:54
+21 minutes, 54 seconds
+components that matter the result of this projection is that a single rotation in the original space
+22:01
+22 minutes, 1 second
+before projection results in two full rotations in the space after the projection
+22:07
+22 minutes, 7 seconds
+because in the projected space we can no longer tell the difference between the positive and negative versions of a point
+22:15
+22 minutes, 15 seconds
+each point on the complex projective line is determined by two real numbers and so we can draw the points on a
+22:23
+22 minutes, 23 seconds
+sphere determined by two angles Theta and Phi if we want to visualize the overall
+22:30
+22 minutes, 30 seconds
+phase of a spinner we can view it as the angle of a flag that is spinning around a flagpole and the overall scaling
+22:38
+22 minutes, 38 seconds
+Factor can be visualized as the length of the flagpole but neither the angle of the FLAG NOR the length of the flagpole change the
+22:47
+22 minutes, 47 seconds
+location of the relevant point on the sphere and so they don't actually change the spinner
+22:54
+22 minutes, 54 seconds
+so we've closed the first chapter of our journey into understanding Spinners we have a mathematical description of
+23:01
+23 minutes, 1 second
+spinners that works and can be applied to two different physical problems but there's still more to learn we'll see
+23:10
+23 minutes, 10 seconds
+later that we can write 3D vectors as two by two matrices that rotate with double-sided Transformations using a
+23:18
+23 minutes, 18 seconds
+pair of su2 matrices if you're familiar with quaternions this is equivalent to rotating a vector with
+23:26
+23 minutes, 26 seconds
+a pair of unit quaternions we're going to see that we can Factor this 3D Vector into a pair of spinners
+23:34
+23 minutes, 34 seconds
+and each spinner will rotate with a single su2 Matrix in other words Spinners transform with a
+23:42
+23 minutes, 42 seconds
+single quaternion instead of two quaternions we'll also see how we can find the higher dimensional analogues of the
+23:51
+23 minutes, 51 seconds
+quaternions and su2 matrices for example in the four-dimensional space time of special relativity we'll
+23:59
+23 minutes, 59 seconds
+generalize the quaternions to The Matrix Group sl2c which will allow us to do both rotations and reference frame
+24:07
+24 minutes, 7 seconds
+boosts giving us six types of rotations for space-time spinners also I've left a few links in the
+24:15
+24 minutes, 15 seconds
+description to other sources that discuss physical applications of spinners and the flagpole visualization

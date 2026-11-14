@@ -1,0 +1,553 @@
+https://www.youtube.com/watch?v=qICXIY5Dynk
+
+Chapter 1: Introduction
+0:00
+0 seconds
+so we're continuing looking at examples of spinners in physics in the last video we introduced Jones vectors for
+0:07
+7 seconds
+representing the polarizations of electromagnetic waves the top component gives the magnitude and phase of a
+0:15
+15 seconds
+horizontally polarized wave and the bottom component gives the magnitude and phase of a vertically polarized wave
+0:22
+22 seconds
+by combining these two polarizations in different amounts and phases we can get other polarizations like diagonal
+0:31
+31 seconds
+anti-diagonal left circular and right circular polarizations in this video we're going to find that
+0:38
+38 seconds
+we can rotate between all these polarizations by using special matrices called su2 matrices and this will reveal
+0:47
+47 seconds
+how there's an angle doubling relationship between physical space and wave polarizations this will show us that Jones vectors are
+0:55
+55 seconds
+actually spinners so when it comes to light waves in real life we can manipulate the polarization
+Chapter 2: Waveplates
+1:03
+1 minute, 3 seconds
+of light waves using various optical devices like polarizers and wave plates in the world of math these correspond to
+1:12
+1 minute, 12 seconds
+multiplying our Jones vectors by various matrices called Jones matrices I'm not going to discuss polarizers in
+1:21
+1 minute, 21 seconds
+this video minute physics and three blue one brown have already done really good videos on polarizers that I've Linked In the description
+1:29
+1 minute, 29 seconds
+for this video the more relevant Optical device I'm going to talk about is the wave plate a wave plate is a device that
+1:37
+1 minute, 37 seconds
+essentially rotates one polarization into another by introducing phase delays you probably already know that a light
+1:45
+1 minute, 45 seconds
+wave will change speed when it passes from one medium to another such as passing from air into a crystal
+1:52
+1 minute, 52 seconds
+because of the change in speed by the time the light exits the crystal there is a phase change in the resulting wave
+1:59
+1 minute, 59 seconds
+compared to light that did not pass through the crystal in special crystals called birefringent
+2:07
+2 minutes, 7 seconds
+crystals the phase change is actually different in the horizontal and vertical directions this means that a light wave
+2:15
+2 minutes, 15 seconds
+whose horizontal and vertical polarizations are aligned before entering the crystal can have a phase Difference by the time they exit the
+2:24
+2 minutes, 24 seconds
+crystal for example let's say we take a birefringent crystal and aim a diagonally polarized wave D towards it
+Chapter 3: D-to-L rotation
+2:32
+2 minutes, 32 seconds
+where the horizontal and vertical components are in phase if the crystal introduces a quarter
+2:40
+2 minutes, 40 seconds
+cycle phase change and the vertical component then the resulting wave is a left circularly polarized wave l
+2:48
+2 minutes, 48 seconds
+this Crystal that changes the vertical polarization by a quarter cycle is called a quarter wave plate and it is
+2:56
+2 minutes, 56 seconds
+represented by this Matrix here if we apply this Matrix to our diagonally polarized Jones Vector it
+3:04
+3 minutes, 4 seconds
+leaves the horizontal polarization alone but applies a quarter phase change to the vertical polarization
+3:12
+3 minutes, 12 seconds
+remember the imaginary I is a quarter turn around the complex unit circle so it represents a phase change of a
+3:20
+3 minutes, 20 seconds
+quarter cycle if we apply this quarter wave plate again by multiplying by the same Matrix
+3:28
+3 minutes, 28 seconds
+it will cause the H and V polarizations to realign again but with an opposite sign in the v polarization which is the
+3:37
+3 minutes, 37 seconds
+same thing as a half cycle phase change this gives the anti-diagonal polarization a applying the quarter wave plate again
+3:46
+3 minutes, 46 seconds
+the V polarization is changed yet again to give negative I which is a three-quarter cycle phase change which
+3:55
+3 minutes, 55 seconds
+gives a right circularly polarized wave r and applying the quarter wave plate again brings us back to where we
+4:02
+4 minutes, 2 seconds
+originally started with the diagonal polarization d so this Matrix here allows us to rotate
+4:10
+4 minutes, 10 seconds
+around in a circle between these four polarizations dla and R and actually if we replace
+4:18
+4 minutes, 18 seconds
+this imaginary I which represents a quarter phase with an arbitrary phase we can rotate continuously around this
+4:26
+4 minutes, 26 seconds
+circle with any phase we like and this gives us all sorts of different polarizations including elliptical
+4:33
+4 minutes, 33 seconds
+polarizations if we rotate around this circle the polarizations look like this
+4:42
+4 minutes, 42 seconds
+now it's interesting to note that if we put a horizontally polarized wave H through this quarter wave plate nothing
+Chapter 4: H-to-L rotation
+4:50
+4 minutes, 50 seconds
+actually happens the output wave is still horizontally polarized but that doesn't mean that this wave plate is
+4:57
+4 minutes, 57 seconds
+totally useless for horizontally polarized waves we can make something interesting happen if we rotate this wave plate by 45
+5:06
+5 minutes, 6 seconds
+degrees in this case the output wave is a left circularly polarized wave l this isn't surprising if you think about
+5:14
+5 minutes, 14 seconds
+it because the setup we have here is the exact same setup as our previous example but with everything rotated in Space by
+5:23
+5 minutes, 23 seconds
+45 degrees the physics is the same we're just viewing it from a different angle
+5:30
+5 minutes, 30 seconds
+however when viewed from this angle our quarter wave plate rotated by 45 degrees is represented by this new Matrix
+5:40
+5 minutes, 40 seconds
+you'll notice that this Matrix contains a phase Factor e to the I pi over 4 written in Gray we'll see later that we
+5:49
+5 minutes, 49 seconds
+can actually ignore this phase Factor but for now I'm going to include it you can think of this new Matrix as a
+5:57
+5 minutes, 57 seconds
+combination of three matrices the first Matrix will rotate our coordinates 45 degrees so that our
+6:04
+6 minutes, 4 seconds
+coordinate system is now aligned with the main directions of the wave plate then we apply the original quarter
+6:12
+6 minutes, 12 seconds
+waveplate Matrix we saw in our previous example then we rotate our coordinate system back by 45 degrees in the opposite
+6:20
+6 minutes, 20 seconds
+direction when we combine these three procedures through matrix multiplication we get this new Matrix which represents a
+6:29
+6 minutes, 29 seconds
+quarter wave plate angled at 45 degrees as you can see it turns a horizontally polarized wave into a left circularly
+6:38
+6 minutes, 38 seconds
+polarized wave once again I'm ignoring this phase Factor outside here and I'll explain why
+6:45
+6 minutes, 45 seconds
+in a moment if we apply this wave plate multiple times we get waves that are vertically
+6:52
+6 minutes, 52 seconds
+polarized right circularly polarized and then we return to horizontally polarized again
+6:59
+6 minutes, 59 seconds
+so this wave plate rotated by 45 degrees represented by this Matrix takes us in a circle around the polarizations
+7:08
+7 minutes, 8 seconds
+hlv and r and again we can actually rotate continuously along this circle to get
+7:15
+7 minutes, 15 seconds
+all sorts of polarizations in between we just need to take our rotation matrices from before and set them to an arbitrary
+7:23
+7 minutes, 23 seconds
+angle Theta instead of using 45 degrees this corresponds to rotating our wave plate by an arbitrary angle
+Chapter 5: Ignoring overall phase shifts
+7:32
+7 minutes, 32 seconds
+now let's get back to all these phase factors that I've been ignoring why is it okay to ignore these phase factors
+7:41
+7 minutes, 41 seconds
+well we know that if we take a diagonally polarized wave and shift the vertical component of the wave by a
+7:48
+7 minutes, 48 seconds
+quarter phase we end up with a left circularly polarized wave but now instead let's shift both the
+7:56
+7 minutes, 56 seconds
+horizontal and vertical components by a quarter phase the result is just shifting the entire Wave by a quarter phase the wave's
+8:05
+8 minutes, 5 seconds
+diagonal polarization is unchanged we've just shifted the wave along the axis of travel
+8:12
+8 minutes, 12 seconds
+so when it comes to using Jones vectors to represent wave polarizations multiplying both components of the Jones
+8:20
+8 minutes, 20 seconds
+vector by the same phase has no effect on the wave's polarization all this does is shift the wave along the axis of
+8:29
+8 minutes, 29 seconds
+travel so when it comes to polarizations there are multiple Jones vectors that represent the same polarization each
+8:38
+8 minutes, 38 seconds
+with a different total phase factor in front so we can ignore these total phases when studying wave polarizations because
+8:47
+8 minutes, 47 seconds
+total phase shifts don't change the polarization of a wave so we have this Matrix for rotating in a
+Chapter 6: H-to-A rotation and the Poincaré Sphere
+8:56
+8 minutes, 56 seconds
+circle between the polarizations D L A and R and this Matrix rotates us in a circle between the polarizations hlv and
+9:05
+9 minutes, 5 seconds
+r putting these two circles together we get a sort of sphere shape this indicates that there should be
+9:13
+9 minutes, 13 seconds
+another Matrix for rotating between h a v and d and that ends up being true
+9:19
+9 minutes, 19 seconds
+rotating between h a v and D is the same thing as looking at the X Y plane and
+9:26
+9 minutes, 26 seconds
+rotating the wave clockwise which is given by this Matrix here for quarter turns and given by this Matrix here for
+9:35
+9 minutes, 35 seconds
+rotating continuously so all together we see that we can arrange all our polarizations of light
+9:43
+9 minutes, 43 seconds
+on a sphere like this this is called the plank array sphere we initially discovered these three matrices for
+9:51
+9 minutes, 51 seconds
+performing quarter turns on the sphere and these matrices can be generalized to continuous angles which allows us to
+10:00
+10 minutes
+reach any point on the sphere giving any arbitrary Jones Vector of amplitude 1.
+10:07
+10 minutes, 7 seconds
+so what's so special about these matrices what do they have in common it turns out that these matrices all belong
+Chapter 7: U(2) Matrices
+10:15
+10 minutes, 15 seconds
+to a group of matrices called U2 the unitary group of two by two matrices but what does this mean
+10:24
+10 minutes, 24 seconds
+well the key idea for rotating across this sphere is that we are not changing the amplitudes of our waves
+10:31
+10 minutes, 31 seconds
+so we're just rotating the Jones vectors on the sphere without changing their lengths
+10:38
+10 minutes, 38 seconds
+so U2 matrices represent rotations on the sphere of polarizations to understand this let's go back to 3D
+10:47
+10 minutes, 47 seconds
+vectors for a moment one way to get the squared length of a vector v is to treat V as a column and write the squared
+Chapter 8: O(3) Matrices for Real vectors
+10:56
+10 minutes, 56 seconds
+length as V transpose V where the transpose operation just means we flip columns into rows
+11:03
+11 minutes, 3 seconds
+when we perform this array multiplication we get x squared plus y squared plus Z squared which is the
+11:11
+11 minutes, 11 seconds
+standard Pythagoras formula for the squared length of a 3D vector now what if we wanted to apply a matrix
+11:18
+11 minutes, 18 seconds
+R to this Vector to rotate the vector how do we determine what this Matrix R would look like
+11:25
+11 minutes, 25 seconds
+well a key fact about rotating vectors is that their length doesn't change under rotation so if we take our formula for the
+11:35
+11 minutes, 35 seconds
+squared length of v and then apply our rotation Matrix R to V this should not change the result of the original
+11:42
+11 minutes, 42 seconds
+squared length formula so these two formulas must be equal it's a standard rule from linear algebra
+11:51
+11 minutes, 51 seconds
+that the transpose of a product of arrays is equal to the transposes of the individual arrays multiplied in the
+11:59
+11 minutes, 59 seconds
+reverse order so we can write RV all transposed as V transpose R transpose
+12:07
+12 minutes, 7 seconds
+so this equation is telling us that if R is a rotation Matrix that doesn't change the length of vectors then R transpose R
+12:16
+12 minutes, 16 seconds
+must be equal to the identity Matrix another way of saying this is that our transpose is the inverse of r
+12:24
+12 minutes, 24 seconds
+if R is a three by three Matrix with the columns highlighted like this then our transpose involves flipping the columns
+12:32
+12 minutes, 32 seconds
+into rows to give us this now remember R transpose multiplied by R
+12:39
+12 minutes, 39 seconds
+gives us the identity Matrix this gives us some interesting relationships between The Columns of r
+12:47
+12 minutes, 47 seconds
+notice that when we multiply any column by its transpose we get one this tells us that The Columns of R if
+12:55
+12 minutes, 55 seconds
+treated as vectors each have magnitude one also if we multiply any column by a different columns transpose we get 0.
+13:05
+13 minutes, 5 seconds
+this tells us that The Columns of R if treated as vectors are all orthogonal to each other
+13:12
+13 minutes, 12 seconds
+matrices that satisfy these properties are called orthogonal matrices and we write the group of all orthogonal three
+13:21
+13 minutes, 21 seconds
+by three matrices as O3 so we know our rotations in 3D are done
+Chapter 9: SO(3) Matrices for 3D Rotations
+13:28
+13 minutes, 28 seconds
+by O3 matrices but we've actually missed an important detail it's true that rotations don't change the length of a
+13:36
+13 minutes, 36 seconds
+vector but Reflections also don't change the length of a vector so this O3 group of matrices that don't change Vector
+13:45
+13 minutes, 45 seconds
+lengths contains both rotation matrices and reflection matrices if we take the formula R transpose R
+13:53
+13 minutes, 53 seconds
+equals the identity and take the determinant of both sides we know from linear algebra that the determinant of a
+14:01
+14 minutes, 1 second
+product equals the product of the determinants and also taking the transpose of a matrix doesn't affect the determinant so
+14:09
+14 minutes, 9 seconds
+we ignore the transpose since the determinant of the identity Matrix is one this tells us that the
+14:16
+14 minutes, 16 seconds
+determinant of R is either plus one or minus 1.
+14:21
+14 minutes, 21 seconds
+remember the determinant of a matrix tells us how much it changes the areas of squares in two Dimensions or the
+14:29
+14 minutes, 29 seconds
+volumes of cubes in three dimensions rotations have a determinant of plus one since rotations don't change areas or
+14:38
+14 minutes, 38 seconds
+volumes Reflections don't change the size of volumes but Reflections reverse directions and this results in a
+14:47
+14 minutes, 47 seconds
+determinant of minus one so if we only want to look at matrices that do rotations and not Reflections we
+14:55
+14 minutes, 55 seconds
+have to only look at the orthogonal matrices with determinant plus one this is called the special orthogonal group
+15:03
+15 minutes, 3 seconds
+SO3 where the word special means we're restricting ourselves to matrices with a determinant of plus one
+Chapter 10: Hermitian Conjugates
+15:12
+15 minutes, 12 seconds
+so we know that the special orthogonal 3x3 matrices will perform rotations on 3D vectors without changing their
+15:20
+15 minutes, 20 seconds
+lengths now getting back to our sphere of polarizations we want to know what kind of matrices will rotate our Jones
+15:28
+15 minutes, 28 seconds
+vectors around without changing their amplitudes this sounds similar to rotating 3D
+15:35
+15 minutes, 35 seconds
+vectors but there's one key difference Jones vectors have complex number entries instead of real number entries
+15:44
+15 minutes, 44 seconds
+if we have the complex number C equals three plus four I we don't get its squared magnitude by doing c times c as
+15:54
+15 minutes, 54 seconds
+this gives us another complex number and magnitudes must be real instead the squared magnitude is given
+16:02
+16 minutes, 2 seconds
+by c times the complex conjugate of CE which is denoted with this star and flips the sign of the imaginary part
+16:11
+16 minutes, 11 seconds
+this results in the correct magnitude of C which is the real number five so when we want the squared magnitude of
+16:19
+16 minutes, 19 seconds
+a complex Jones Vector J it's not enough to write J transpose J as this might give us a complex number result
+16:28
+16 minutes, 28 seconds
+instead we write J transpose complex conjugate times J to get the correct squared magnitude
+16:36
+16 minutes, 36 seconds
+this combination of transpose and complex conjugate is called the hermitian conjugate and is usually
+16:43
+16 minutes, 43 seconds
+written with a single dagger symbol so to get to the squared magnitude of a Jones Vector we use J dagger J
+16:53
+16 minutes, 53 seconds
+as an exercise you can check that each of these Jones vectors indeed has a magnitude of one
+Chapter 11: U(2) Matrices for Complex vectors
+17:00
+17 minutes
+so if we rotate a Jones Vector J around with a matrix U the result of the magnitude formula should stay the same
+17:08
+17 minutes, 8 seconds
+so these two formulas are equal rewriting u j all daggered as J dagger you dagger we see that our rotation
+17:17
+17 minutes, 17 seconds
+Matrix U must obey U dagger U equals the identity in other words U inverse equals
+17:25
+17 minutes, 25 seconds
+its complex conjugate transpose we call matrices with this property unitary they are sort of like the
+17:33
+17 minutes, 33 seconds
+complex number equivalent of orthogonal matrices since they rotate complex vectors around without changing their magnitude
+17:42
+17 minutes, 42 seconds
+the group of two by two unitary matrices is called U2 and another good exercise to try is to pause the video and confirm
+17:51
+17 minutes, 51 seconds
+you can get to the inverse of all of these matrices by taking their complex transpose taking the determinant of this formula
+18:00
+18 minutes
+for U2 matrices we get that the squared magnitude of the determinant must be one but since the determinant of U is a
+18:09
+18 minutes, 9 seconds
+complex number the answer isn't just plus or minus one instead the answer can be any complex number on the unit circle
+18:17
+18 minutes, 17 seconds
+with magnitude one and this can be written in the form of e to the I times Theta
+18:24
+18 minutes, 24 seconds
+we can check its magnitude is 1 by multiplying it by its complex conjugate and canceling the exponents
+Chapter 12: SU(2) Matrices for Rotating Jones Vectors
+18:33
+18 minutes, 33 seconds
+so we know that U2 matrices can rotate our Jones vectors on the point array sphere but once again there's something
+18:42
+18 minutes, 42 seconds
+we've missed recall that any two Jones vectors that are the same but with a different phase factor in front
+18:49
+18 minutes, 49 seconds
+represents the same polarization for example each of these Jones vectors represents a left circularly polarized
+18:58
+18 minutes, 58 seconds
+wave this means that if we want to turn a diagonally polarized wave into a left circularly polarized wave there are
+19:07
+19 minutes, 7 seconds
+multiple U2 matrices that can do this all identical but with a different phase factor in front because we can ignore
+19:16
+19 minutes, 16 seconds
+the phase factor and the final result anyway so the group of U2 matrices has some
+19:23
+19 minutes, 23 seconds
+redundancy given by this phase factor out in front however it's possible to pick out a
+19:30
+19 minutes, 30 seconds
+unique U2 Matrix that takes us between a specific initial and a specific final polarization all we need to do is to
+19:39
+19 minutes, 39 seconds
+find the specific U2 Matrix that has a determinant of plus one so if we have some U2 Matrix with a
+19:48
+19 minutes, 48 seconds
+determinant that's equal to a complex number e to the I Theta we can convert it into an equivalent Matrix with a
+19:56
+19 minutes, 56 seconds
+determinant of plus one by following the below procedure we just multiply all the elements of the
+20:03
+20 minutes, 3 seconds
+matrix by e to the negative I Theta over two after taking the determinant combining the exponents and factoring these
+20:12
+20 minutes, 12 seconds
+exponentials cancel and we get a determinant of plus one this multiplicative phase Factor doesn't
+20:20
+20 minutes, 20 seconds
+affect the polarization of our Jones vectors since we can ignore overall phase factors anyway
+20:28
+20 minutes, 28 seconds
+the set of two by two unitary matrices with a determinant equal to plus one is
+20:34
+20 minutes, 34 seconds
+called su2 the special unitary group of two by two matrices this is the set of matrices that rotate our Jones vectors
+20:43
+20 minutes, 43 seconds
+around on this sphere of polarizations again the word special means the matrices that have a determinant of plus
+20:52
+20 minutes, 52 seconds
+one we'll finish this video by explaining why these Jones vectors are considered spinners
+Chapter 13: Why Jones vectors are Spinors (angle-doubling)
+20:59
+20 minutes, 59 seconds
+notice that in physical space vertical and horizontal polarizations are angled 90 degrees apart but on the sphere of
+21:08
+21 minutes, 8 seconds
+polarizations we've created the hnv polarizations are on opposite sides 180 degrees apart
+21:17
+21 minutes, 17 seconds
+so a quarter turn in physical space corresponds to a half turn in polarization space
+21:24
+21 minutes, 24 seconds
+if we do another quarter turn in physical space we end up at the negative vertical polarization where the negative
+21:32
+21 minutes, 32 seconds
+sign indicates the wave has an extra phase of half a cycle compared to the starting wave
+21:39
+21 minutes, 39 seconds
+but in polarization space we've done another half turn and completed a full loop and are back to where we started
+21:47
+21 minutes, 47 seconds
+when it comes to polarizations there is no difference between a vertical polarization with a positive sign in
+21:54
+21 minutes, 54 seconds
+front and a vertical polarization with a negative sign in front the overall phase shift doesn't matter
+22:01
+22 minutes, 1 second
+and both are considered vertical polarizations since wave polarizations are unchanged
+22:09
+22 minutes, 9 seconds
+by an overall phase shift the Jones vectors in our polarization space are unable to see the negative sign in front
+22:16
+22 minutes, 16 seconds
+of the wave all it sees is a vertically polarized wave to get back to the original wave we do
+22:24
+22 minutes, 24 seconds
+another half turn in physical space which corresponds to another full turn in the polarization space
+22:32
+22 minutes, 32 seconds
+so a full turn in physical space requires two full turns in polarization space this is why Jones vectors are considered
+22:41
+22 minutes, 41 seconds
+Spinners rotating a wave back to its original state requires two full rotations of the Jones Vector in
+22:49
+22 minutes, 49 seconds
+polarization space so when we rotate by an angle Theta in polarization space this corresponds to a
+22:59
+22 minutes, 59 seconds
+rotation by an angle of theta over 2 in physical space for this reason you will often see the
+23:07
+23 minutes, 7 seconds
+su2 matrices that are used to rotate Jones vectors written with half angles like this because when we want to rotate
+23:15
+23 minutes, 15 seconds
+by an angle of Pi in polarization space this corresponds to rotating our Jones Vector components by an angle of pi over 2.
+23:26
+23 minutes, 26 seconds
+this is how we get from the V polarization to the H polarization in the next video we're going to learn
+Chapter 14: Next Video
+23:34
+23 minutes, 34 seconds
+about Quantum spin States and how they are also described by Spinners that transform with su2 matrices even though
+23:43
+23 minutes, 43 seconds
+this is a different physical phenomenon we'll find that the mathematics of analyzing Quantum spin States is almost
+23:50
+23 minutes, 50 seconds
+the exact same as the math required for analyzing polarizations of light waves this will show us that Spinners are
+23:58
+23 minutes, 58 seconds
+indeed useful tools that can solve multiple problems if you're interested in doing one last exercise you can try rotating this Jones
+24:07
+24 minutes, 7 seconds
+Vector around this path using these matrices and checking if the final result makes sense

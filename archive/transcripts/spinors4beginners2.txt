@@ -1,0 +1,455 @@
+https://youtu.be/DvEdm6a-9Tw
+
+Chapter 1: Introduction
+0:00
+0 seconds
+So in the last video I introduced my  staircase plan for explaining spinors,   which starts with the simplest explanations at  the bottom, and ends with the most complicated  
+0:10
+10 seconds
+explanations at the top. We’re going to  start at the bottom of the staircase,   which is basic examples of spinors in physics.  
+0:18
+18 seconds
+In the next 4 or 5 videos I’m going to  talk about two examples of how spinors   come up in physics: the polarization of  light waves, and quantum spin states.  
+0:29
+29 seconds
+We’re going to find that both of these  phenomena can be described by spinors,  
+0:34
+34 seconds
+in the form of 2x1 columns with complex number  entries. Afterward, we’ll see how we can  
+0:41
+41 seconds
+visualize these spinors as flagpoles on a sphere,  called the Poincare sphere or Bloch sphere.  
+0:49
+49 seconds
+In this video we’re going to discuss all  the different polarizations of light waves,  
+0:54
+54 seconds
+and their corresponding spinors (which are called  “Jones Vectors” in this specific case), and in the  
+1:02
+1 minute, 2 seconds
+next video we will discuss how to rotate between  these polarizations using SU(2) matrices.  
+Chapter 2: Electromagnetic Waves
+1:09
+1 minute, 9 seconds
+So I’m hoping you’re familiar with electric  and magnetic fields. The electric field is a  
+1:15
+1 minute, 15 seconds
+set of vectors everywhere in space that point  in the direction that a positive charge will  
+1:20
+1 minute, 20 seconds
+be pulled in due to electric forces. The  magnetic field is another set of vectors  
+1:26
+1 minute, 26 seconds
+everywhere in space that tell us which direction  compass will point, due to magnetic forces.  
+1:33
+1 minute, 33 seconds
+According to the laws of electricity and  magnetism, it’s possible for electric and magnetic  
+1:38
+1 minute, 38 seconds
+field vectors to vibrate back and forth together  in a wave, called an electromagnetic wave.  
+1:45
+1 minute, 45 seconds
+The light we see is an example of  electromagnetic waves. Usually,  
+1:51
+1 minute, 51 seconds
+Electromagnetic waves are "travelling waves",  meaning they travel through space overtime.  
+1:57
+1 minute, 57 seconds
+The image you're seen here is a snapshot  of an electromagnetic wave at a single   instant in time. But as time passes  by, the wave will travel forward.  
+2:09
+2 minutes, 9 seconds
+Electromagnetic waves are transverse waves. This  means the direction of the wave oscillation always  
+2:17
+2 minutes, 17 seconds
+perpendicular to the direction of travel. So  if an electromagnetic wave is travelling in  
+2:23
+2 minutes, 23 seconds
+the z-direction, the wave can oscillate in  the xy plane perpendicular to the direction  
+2:29
+2 minutes, 29 seconds
+of travel, but the wave cannot oscillate in the  z-direction, parallel to the direction of travel.  
+2:36
+2 minutes, 36 seconds
+The polarization of a given electromagnetic  wave is the geometric orientation of the wave.  
+2:44
+2 minutes, 44 seconds
+We only use the Electric Field “E” to define  the polarization of an electromagnetic wave,   so we ignore the magnetic field  when talking about polarization.  
+2:55
+2 minutes, 55 seconds
+Let’s look at an electromagnetic wave propagating  in the z-direction. Again, here we're looking at  
+3:02
+3 minutes, 2 seconds
+a snapshot of a travelling wave at one moment  in time. When the electric field oscillates up  
+3:09
+3 minutes, 9 seconds
+and down along the y-axis, we call this “vertical”  polarization. If we rotate this wave by a quarter  
+3:16
+3 minutes, 16 seconds
+turn, it is now oscillating left and right  along the x-axis, and we call this “horizontal”  
+3:23
+3 minutes, 23 seconds
+polarization. If we rotate the wave by another  quarter turn, we end up with vertical polarization  
+3:30
+3 minutes, 30 seconds
+again, although with the wave shifted by half  a wave cycle compared to the original wave.  
+Chapter 3: EM Wave Equations
+3:36
+3 minutes, 36 seconds
+Let’s look more closely at a vertically polarized  wave. Remember, the electric field is a vector  
+3:43
+3 minutes, 43 seconds
+field, meaning it is represented as an arrow  at every point in space and time. The arrow  
+3:49
+3 minutes, 49 seconds
+has components in the x, y, and z directions,  which we can write like this, using a linear  
+3:55
+3 minutes, 55 seconds
+combination of XYZ basis vectors. We can also  write this as a 3-component column like this.  
+4:04
+4 minutes, 4 seconds
+For a vertically polarized wave, the electric  field only exists along the y-axis, so the X  
+4:11
+4 minutes, 11 seconds
+and Z components of the electric field go to  zero. If we were to write out the y-component  
+4:17
+4 minutes, 17 seconds
+of the electric field for this travelling wave,  it would be an amplitude “A” times a cosine wave,  
+4:24
+4 minutes, 24 seconds
+that depends on both time and space. Here, “t” is  time, and “z” is the location along the z-axis.  
+4:34
+4 minutes, 34 seconds
+Omega is the angular frequency, and k is the  angular wavenumber. I find this easiest to  
+4:42
+4 minutes, 42 seconds
+visualize on a spacetime diagram, with him  moving into the future as we move upward.  
+4:49
+4 minutes, 49 seconds
+Let’s say we have a wave that travels in the  +z direction overtime. We could draw out this  
+4:57
+4 minutes, 57 seconds
+travelling wave as a surface in our spacetime  diagram. The density of the waves in space is  
+5:05
+5 minutes, 5 seconds
+given by the wavenumber, and the density of  the waves in time is given by the frequency.  
+5:12
+5 minutes, 12 seconds
+One thing we can do to modify our wave is to add  an extra value phi inside the sinusoid function.  
+5:19
+5 minutes, 19 seconds
+You can think of this as indicating wave’s  “starting” value at the origin z=0, when time t=0.  
+5:29
+5 minutes, 29 seconds
+This starting value is called a “phase”.  And changing the phase value will shift  
+5:35
+5 minutes, 35 seconds
+the wave back and forth along the axis of  travel. Applying a phase shift of -pi/2 to  
+5:44
+5 minutes, 44 seconds
+a cosine will shift the wave ahead a quarter  cycle, which is equivalent to a sine wave.  
+Chapter 4: Euler's Formula
+5:52
+5 minutes, 52 seconds
+Now, something that can help us represent waves  is remembering Euler’s formula, which tells us  
+5:59
+5 minutes, 59 seconds
+we can write “e” to the power of the imaginary  “i” times theta, as cos(theta) + i*sin(theta).  
+6:07
+6 minutes, 7 seconds
+This is a useful property, because if we have  e^i*theta and want to add some angle phi to it,  
+6:16
+6 minutes, 16 seconds
+we just multiply by e^i*phi, and use the  standard exponent rules to re-write this  
+6:23
+6 minutes, 23 seconds
+as a single exponential with the exponents  added. If we use Euler’s formula to convert  
+6:30
+6 minutes, 30 seconds
+back to cosine and sine, we see a phase phi  has been added inside the sinusoid functions.  
+6:38
+6 minutes, 38 seconds
+Now, electromagnetic waves are described only be  real numbers. But for convenience, we can pretend  
+6:45
+6 minutes, 45 seconds
+that our Ey component is actually a complex  number, where the real part of this complex  
+6:51
+6 minutes, 51 seconds
+number is the actual electric field we observe in  real life (with the imaginary part being ignored).  
+6:59
+6 minutes, 59 seconds
+This means the full Ey component would  have a real part with a cosine wave,  
+7:04
+7 minutes, 4 seconds
+and we can invent the fake imaginary part to  be a sine wave, since we ignore it anyway.  
+7:12
+7 minutes, 12 seconds
+Using Euler’s formula, we can write this  more compactly as a complex exponential.  
+7:18
+7 minutes, 18 seconds
+This also means we can pull put the phase  phi out using exponent rules and write it  
+7:24
+7 minutes, 24 seconds
+as a multiplicative factor e^i*phi. The  allows us to write the wave as 3 separate  
+7:32
+7 minutes, 32 seconds
+multiplicative factors: the amplitude, times  the phase, times the actual traveling wave.  
+7:38
+7 minutes, 38 seconds
+So while the true electric field here is  just the real part of this complex wave,  
+7:44
+7 minutes, 44 seconds
+we can write the electric field using complex  exponentials for mathematical convenience.   ===== Horizontal Polarization +  combining polarization. =====  
+7:51
+7 minutes, 51 seconds
+As I said before, if we take this vertically  polarized wave and rotate it a quarter turn,  
+7:57
+7 minutes, 57 seconds
+we get a horizontally polarized wave.  In this case, the wave only oscillates  
+8:03
+8 minutes, 3 seconds
+in the X direction, and so the Y and  Z components of the field are zero.  
+8:09
+8 minutes, 9 seconds
+Once again, the true electric field is  given by a cosine, but for convenience,  
+8:14
+8 minutes, 14 seconds
+we can write it as a complex exponential, with the  amplitude and phase written separately in front.  
+Chapter 5: Jones Vectors H and V
+8:21
+8 minutes, 21 seconds
+So to review, with the vertically polarized  waves, the y-component of the electric field is  
+8:27
+8 minutes, 27 seconds
+a travelling wave, and the X and Z components are  zero. And with a Horizontally polarized wave, the  
+8:34
+8 minutes, 34 seconds
+X-component of the electric field is a travelling  wave, and the Y and Z components are zero.  
+8:41
+8 minutes, 41 seconds
+Now, we know from physical experiments that  electromagnetic waves can be super-imposed  
+8:47
+8 minutes, 47 seconds
+on top of each other, so it’s possible to add  horizontally and vertically polarized waves  
+8:52
+8 minutes, 52 seconds
+together like this. Now, notice that the two  polarizations each have their own amplitude,  
+8:59
+8 minutes, 59 seconds
+and their own phase. But the actual wave portion  is identical in both, so we can factor it out and  
+9:08
+9 minutes, 8 seconds
+right it outside the column like this. Now, here I want to state the main idea  
+9:14
+9 minutes, 14 seconds
+of this video. When it comes to studying the  polarizations of waves, all the information we  
+9:20
+9 minutes, 20 seconds
+need to look at is contained in this column:  the amplitudes and the phases. The actual  
+9:27
+9 minutes, 27 seconds
+travelling wave portion of the formula can be  ignored, since it’s the same for all components.  
+9:34
+9 minutes, 34 seconds
+We can even go one step further and  ignore the z-component altogether,   since we can always choose coordinates where  z-direction is the direction of wave propagation,  
+9:46
+9 minutes, 46 seconds
+and therefore the z-component of  electric field will always be zero.  
+9:52
+9 minutes, 52 seconds
+The resulting 2x1 column of complex  numbers is called a “Jones Vector”,  
+9:58
+9 minutes, 58 seconds
+and it tells us everything we need to know  about the polarization of a given wave.  
+10:04
+10 minutes, 4 seconds
+Any light wave polarization can be written as a  linear combination of a horizontally polarized  
+10:10
+10 minutes, 10 seconds
+wave, and a vertically polarized wave, each  with complex numbers in front denoting their  
+10:16
+10 minutes, 16 seconds
+respective amplitudes and phase. Moving forward, I’m going to write   this horizontally polarized wave of  amplitude 1 using the vector capital H,  
+10:27
+10 minutes, 27 seconds
+and I’ll write this vertically polarized wave  with amplitude 1 using the vector capital V.  
+Chapter 6: Jones Vectors D and A
+10:35
+10 minutes, 35 seconds
+So, using the idea of Jones vectors, we can  create new polarizations by selecting different  
+10:41
+10 minutes, 41 seconds
+values for the amplitude and phase parameters.  For example, we can set both phasese to zero,  
+10:49
+10 minutes, 49 seconds
+so that the horizontal and vertical  polarizations are in-phase with each  
+10:54
+10 minutes, 54 seconds
+other. And then set both amplitudes to 1. If we think of H as a vector along the x-axis,  
+11:03
+11 minutes, 3 seconds
+and V as a vector along the y-axis, this new jones  vector points diagonally to the upper-right. This  
+11:11
+11 minutes, 11 seconds
+is called "Diagonal Polarization" denoted with  a capital D. This is what we would get if we  
+11:18
+11 minutes, 18 seconds
+took a horizontally polarized wave, and rotated  it counter-clockwise by 45 degrees. Although,  
+11:27
+11 minutes, 27 seconds
+according to pythagoras, the Jones vector H+V  has an amplitude of the square root of 2... so  
+11:34
+11 minutes, 34 seconds
+we usually divide the components by the square  root of 2 for force the amplitude of D to be 1.  
+11:42
+11 minutes, 42 seconds
+It's also possible to set the amplitude to +1  for H and -1 for V, and this gives us another  
+11:50
+11 minutes, 50 seconds
+polarization that points to the lower-right. We  call this anti-diagonal polarization A. This is  
+11:58
+11 minutes, 58 seconds
+what we get if we took a horizontally polarized  wave, and rotated it clockwise by 45 degrees.  
+12:06
+12 minutes, 6 seconds
+Once again, we normalize this by  dividing by the square root of 2.  
+12:12
+12 minutes, 12 seconds
+So we can get the D and A polarizations by adding  H and V together in the right amounts. In fact, we  
+12:21
+12 minutes, 21 seconds
+can make the wave’s polarization have any angle on  this circle, if we set the coefficients in front  
+12:27
+12 minutes, 27 seconds
+of H and V properly. But there are actually more  polarizations that we still haven’t see yet.  
+Chapter 7: Jones Vectors L and R
+12:35
+12 minutes, 35 seconds
+Let's again set both amplitudes to 1, and set  the horizontal phase to be zero, and the vertical  
+12:43
+12 minutes, 43 seconds
+phase to be pi/2, which is a phase of a quarter  cycle. This polarization is more difficult to  
+12:52
+12 minutes, 52 seconds
+visualize, so let's bring back our column notation  with the travelling wave to understand it better.  
+12:59
+12 minutes, 59 seconds
+Let's pretend we're stuck at the position z=0,  and the angular frequency of the wave is 1,  
+13:06
+13 minutes, 6 seconds
+and we're watching the wave travel  around the XY plane overtime.  
+13:11
+13 minutes, 11 seconds
+What would this look like? We can combine  the exponentials, then use Euler's formuala,  
+13:17
+13 minutes, 17 seconds
+and then take the real part, to see that the  electric field is given by a cosine, and a cosine  
+13:24
+13 minutes, 24 seconds
+with a phase factor of a quarter cycle, which  is really the same things as a negative sin.  
+13:30
+13 minutes, 30 seconds
+At t=0, this gives the coordinates [1, 0]. Then  at t=pi/2, we get coordinates [0, -1]. Then at t =  
+13:43
+13 minutes, 43 seconds
+pi, we get [-1, 0]. At t=3pi/2, we get [0, 1]. And  at t=2pi, we get [1, 0] again. So in this wave,  
+13:58
+13 minutes, 58 seconds
+the electric field vector travels around in  a circle in a clockwise direction overtime.  
+14:05
+14 minutes, 5 seconds
+Bringing back the z-axis... if we take our  left hand and point our thumb in the direction  
+14:11
+14 minutes, 11 seconds
+of wave travel, along the z-axis, the electric  field vector at the origin z=0 will follow the  
+14:19
+14 minutes, 19 seconds
+direction of our curled fingers. Since the wave  follows a circle according to our left hand,  
+14:26
+14 minutes, 26 seconds
+we call it “left-circular polarized”. This  wave would have a helix-shape in 3-dimensions.  
+14:34
+14 minutes, 34 seconds
+Wikipedia user Dave3457 made a great animation  of this that he's put into the public domain.  
+14:43
+14 minutes, 43 seconds
+We denote left circular  polarized waves as capital L.  
+14:48
+14 minutes, 48 seconds
+It’s also more common to write e^i*pi/2 as just  "i", which is a quarter turn in the complex plane,  
+14:57
+14 minutes, 57 seconds
+and once again we normalize by  dividing by the square root of 2.  
+15:03
+15 minutes, 3 seconds
+If we repeat this process from the start, but  instead giving the vertical polarization a phase  
+15:10
+15 minutes, 10 seconds
+of -pi/2, we get a helix wave that corkscrews  in the opposite direction, matching our right  
+15:17
+15 minutes, 17 seconds
+hand when our right thumb points in the  direction of wave travel. So we call this  
+15:23
+15 minutes, 23 seconds
+"right-circular polarized", denoted by capital R. Now, you'll notice in this video I've written my  
+Chapter 8: Sign convention
+15:31
+15 minutes, 31 seconds
+travelling waves with a positive time term and a  negative z-term. Some textbooks use the opposite  
+15:38
+15 minutes, 38 seconds
+sign convention, with a positive z-term  and a negative time term. And as a result,  
+15:44
+15 minutes, 44 seconds
+the jones vectors for circularly polarized waves  have opposite signs on the imaginary parts. So  
+15:52
+15 minutes, 52 seconds
+make sure you know which convention you're using  when talking about circularly polarized waves.  
+15:59
+15 minutes, 59 seconds
+So to summarize this video, we initially  discovered the jones vectors H and V,  
+Chapter 9: Conclusion + Exercise
+16:05
+16 minutes, 5 seconds
+which represent horizontally and vertically  polarized travelling waves. We then found that  
+16:12
+16 minutes, 12 seconds
+writing them in different linear combinations  could give us new polarizations of light,  
+16:17
+16 minutes, 17 seconds
+like diagonal and anti-diagonal polarizations,  and the left and right circular polarizations.  
+16:25
+16 minutes, 25 seconds
+We’re going to see in the next video that these  Jones vector that represent wave polarizations  
+16:31
+16 minutes, 31 seconds
+are actually spinors. At this point, there’s  no particular reason why we would decide these  
+16:38
+16 minutes, 38 seconds
+pairs of complex numbers are special objects that  deserve the special name of “spinor”. But in next  
+16:45
+16 minutes, 45 seconds
+video, we’re going to see how we can rotate  these various polarizations into each other  
+16:50
+16 minutes, 50 seconds
+using special matrices called SU(2) matrices,  and this will reveal the special angle-doubling  
+16:57
+16 minutes, 57 seconds
+relationship between physical space and the  space of wave polarizations. We’ll see that  
+17:04
+17 minutes, 4 seconds
+one rotation in physical space corresponds to  2 full rotations in the polarization space.  
+17:11
+17 minutes, 11 seconds
+The Jones vectors that live in polarization  space require 2 full rotations to get back to  
+17:18
+17 minutes, 18 seconds
+the starting point. And this is exactly  what we would expect from spinors.   In the meantime before the next video, I'd  suggest trying to draw out the shapes of the  
+17:29
+17 minutes, 29 seconds
+polarizations for the jones vectors shown  on the screen here. If you feel confused,  
+17:35
+17 minutes, 35 seconds
+just use the strategy I showed of taking z=0 and  omega=1, and plugging in the different time values  
+17:44
+17 minutes, 44 seconds
+to see how the wave moves around the XY plane.  The answers are linked in the description.

@@ -1,0 +1,603 @@
+https://youtu.be/WQOUhDEj4O8
+
+Chapter 1: Introduction + Stern-Gerlach Experiment
+0:00
+0 seconds
+in this video we're going to look at our second example of spinners in physics which involves the stair and gearlock
+0:08
+8 seconds
+experiment and how it reveals the existence of quantum spin States we're going to find that the mathematics
+0:15
+15 seconds
+used to describe Quantum spin States is the exact same as the mathematics used to describe the polarizations of
+0:22
+22 seconds
+classical light waves that we saw in the last two videos they are both described by two by one
+0:29
+29 seconds
+complex columns called Spinners that can be rotated with su2 matrices and there is an angle doubling relationship
+0:37
+37 seconds
+between physical space and the quantum State space just like how we saw there was an angle doubling relationship between
+0:46
+46 seconds
+polarization space and physical space in the last video before getting to the spinner mathematics let's describe the stair and
+0:55
+55 seconds
+gerlock experiment which was performed in 1922. I'm going to call it the SG experiment for short
+1:04
+1 minute, 4 seconds
+the SG experiment involves a beam of neutral atoms and an inhomogenous magnetic field
+1:11
+1 minute, 11 seconds
+a homogeneous magnetic field would have the same strength everywhere but this strangely shaped magnetic device is able
+1:20
+1 minute, 20 seconds
+to generate an inhomogenous magnetic field which is stronger at this pointed tip labeled South and weaker on the
+1:28
+1 minute, 28 seconds
+lower half labeled North the beam of neutral atoms in the original experiment was made of silver
+1:35
+1 minute, 35 seconds
+atoms neutral atoms have an equal number of protons and electrons so there is no net charge
+1:43
+1 minute, 43 seconds
+naively you'd expect neutral atoms to be completely unaffected by a magnetic field but the Bohr model of the atom
+1:51
+1 minute, 51 seconds
+that was developed in the early 1900s predicted that electrons orbited around the nucleus and this small Loop of
+1:59
+1 minute, 59 seconds
+electric current would behave like a magnetic dipole or a tiny bar magnet
+2:06
+2 minutes, 6 seconds
+now if we were to send a bunch of tiny classical bar magnets through this inhomogenous magnetic field then the bar
+2:14
+2 minutes, 14 seconds
+magnets with North pointing up would be deflected upward since the magnetic field is stronger at this tip
+2:21
+2 minutes, 21 seconds
+and magnets with North pointing down would be deflected downward and every other orientation of bar
+2:29
+2 minutes, 29 seconds
+magnet would be deflected somewhere in between depending on their orientation however after performing The Experiment
+2:37
+2 minutes, 37 seconds
+this is not what we see we only see two types of deflection either completely up or completely down and nothing in
+2:46
+2 minutes, 46 seconds
+between this experiment shows us that when we measure the angular momentum of a silver atom there are only two possible
+2:55
+2 minutes, 55 seconds
+discrete results and so the angular momentum of silver atoms is quantized
+3:02
+3 minutes, 2 seconds
+in later years this magnet-like behavior of silver atoms was found to be not due to the electrons orbital angular
+3:11
+3 minutes, 11 seconds
+momentum around the nucleus it was later discovered that the Bohr model was wrong and that electron
+3:18
+3 minutes, 18 seconds
+orbitals come in various shapes the first 46 electrons in a silver atom have no net orbital angular momentum
+3:27
+3 minutes, 27 seconds
+overall the final 47th electron exists in the spherical 5S orbital which also
+3:35
+3 minutes, 35 seconds
+has no net orbital angular momentum so electron orbitals do not generate a magnetic field here
+Chapter 2: Internal Angular Momentum
+3:44
+3 minutes, 44 seconds
+instead the magnetic dipole in silver atoms is due to the 47th electrons internal angular momentum also called
+3:53
+3 minutes, 53 seconds
+spin angular momentum this internal angular momentum is sometimes envisioned as being due to the
+4:01
+4 minutes, 1 second
+electron spinning on an axis like a ball however in reality electrons are described by wave functions and are not
+4:10
+4 minutes, 10 seconds
+tiny spinning balls so this explanation also fails to explain the magnetic dipole
+4:17
+4 minutes, 17 seconds
+the concept of an electron having internal angular momentum has a reputation for being very difficult to
+4:24
+4 minutes, 24 seconds
+understand however there's an analogy with light that can help our understanding here
+4:31
+4 minutes, 31 seconds
+matter particles have orbital angular momentum when they actually curve around in space and light rays can also have
+4:39
+4 minutes, 39 seconds
+orbital angular momentum when they curve around in space but from our last video we know that
+4:46
+4 minutes, 46 seconds
+light waves can be polarized which allows for an internal type of angular momentum that is internal to the light
+4:54
+4 minutes, 54 seconds
+beam itself modern Quantum field Theory tells us that matter particles can also have
+5:01
+5 minutes, 1 second
+something similar to a polarization which gives them internal angular momentum that's internal to the
+5:08
+5 minutes, 8 seconds
+particles field instead of being due to curved paths in physical space but we're not going to focus on Quantum
+5:17
+5 minutes, 17 seconds
+fields for now for this video we just want a basic experimental understanding of the quantized spin angular momentum
+5:25
+5 minutes, 25 seconds
+of electrons we'll get this understanding by sending a beam of atoms through multiple SG experiments
+Chapter 3: Bra-Ket notation
+5:34
+5 minutes, 34 seconds
+to start let's review some of the notation and Mathematics used in quantum mechanics In classical mechanics when we talk
+5:43
+5 minutes, 43 seconds
+about the state of a particle we're referring to the particle's position and momentum and how these quantities change
+5:51
+5 minutes, 51 seconds
+over time but in quantum mechanics a particle's state is instead represented by an
+5:58
+5 minutes, 58 seconds
+abstract State Vector which Loosely speaking is the same thing as the particle's wave function everything that we can possibly know
+6:07
+6 minutes, 7 seconds
+about a particle like its position momentum and energy can be derived from the particle's state vector
+6:15
+6 minutes, 15 seconds
+this idea of an abstract State Vector can be a bit confusing but hopefully it will become more clear as the video goes
+6:23
+6 minutes, 23 seconds
+on the standard way of writing a vector in physics is to write a little arrow above
+6:30
+6 minutes, 30 seconds
+the variable but in quantum mechanics we use the KET Vector notation and write vectors like this with an angle bracket
+6:39
+6 minutes, 39 seconds
+pointing to the right we can write cat factors as linear combinations of basis vectors as we
+6:46
+6 minutes, 46 seconds
+normally do or write the components of the vector in a column like this four vectors with real components we can
+6:55
+6 minutes, 55 seconds
+get the squared length of a vector v by writing V transpose V but in quantum mechanics Vector
+7:03
+7 minutes, 3 seconds
+components can be complex numbers so we get the squared length of a vector by doing the transpose conjugate times V
+7:12
+7 minutes, 12 seconds
+this extra complex conjugate ensures our final result for the magnitude is real
+7:19
+7 minutes, 19 seconds
+the transpose complex conjugate is called the hermitian conjugate of a vector and this is written with a dagger
+7:27
+7 minutes, 27 seconds
+symbol in quantum mechanics we write the hermitian conjugate of cat vectors like this with an angle bracket that's
+7:36
+7 minutes, 36 seconds
+pointing left these are called bra vectors you can Loosely think of cat vectors as
+7:43
+7 minutes, 43 seconds
+columns and Loosely think of bra vectors as rows when multiplied together they give a
+7:50
+7 minutes, 50 seconds
+single number this is called their inner product now one of the strange Concepts in
+Chapter 4: State Collapse, Born's Rule
+7:58
+7 minutes, 58 seconds
+quantum mechanics is the idea of wave function collapse this is the idea that a particle can be
+8:05
+8 minutes, 5 seconds
+in a superposition of several States but as soon as we measure the particle it will collapse into a single state
+8:12
+8 minutes, 12 seconds
+According to some probabilistic rules mathematically Quantum superpositions
+8:19
+8 minutes, 19 seconds
+are represented by linear combinations where each basis Vector represents one of the possible States the system can
+8:27
+8 minutes, 27 seconds
+collapse to the coefficients in the linear combination are called probability amplitudes and they are related to the
+8:36
+8 minutes, 36 seconds
+probability of measuring each state after the collapse in the SG experiment there are only two
+8:44
+8 minutes, 44 seconds
+states the particle can collapse to either spin up denoted with an up Arrow cut or spin down denoted with a down
+8:53
+8 minutes, 53 seconds
+arrow cut the rules for determining the probabilities for collapsing into a
+8:59
+8 minutes, 59 seconds
+given state are given by Bourne's rule in simplified form Bourne's rule tells
+9:06
+9 minutes, 6 seconds
+us that when we want to know the probability of some State a collapsing onto a state B after a measurement this
+9:15
+9 minutes, 15 seconds
+probability equals the squared magnitude of the inner products of the states A and B written in brockette notation like
+9:24
+9 minutes, 24 seconds
+this this inner product is sort of like the overlap between the two State vectors A
+9:31
+9 minutes, 31 seconds
+and B if we were to cast A's Shadow onto B the process of casting B's Shadow onto a
+9:39
+9 minutes, 39 seconds
+gives us the same result except complex conjugated however since the probabilities we
+9:46
+9 minutes, 46 seconds
+measure are the squared lengths of these inner product overlaps it doesn't matter which direction we measure the overlaps in
+9:54
+9 minutes, 54 seconds
+so the squared magnitude of these two inner products are equal now let's use born's rule to try and
+Chapter 5: Z-oriented S.G. Experiment
+10:03
+10 minutes, 3 seconds
+understand the quantum states in the SG experiment better we'll do this by putting particles
+10:10
+10 minutes, 10 seconds
+through multiple SG experiments in a row to simplify the diagrams a bits I'm
+10:16
+10 minutes, 16 seconds
+going to replace these magnets by a box with the letter Z on it this indicates the nhomogeneous magnetic field points
+10:25
+10 minutes, 25 seconds
+in the Z Direction I'm also going to rewrite the spin up and spin down States AS Plus said and
+10:33
+10 minutes, 33 seconds
+minus said indicating the coordinate directions that the particles are deflected in let's say that the particles in the
+10:40
+10 minutes, 40 seconds
+initial beam are in some State PSI after going through the SG apparatus they collapse into one of two states either
+10:49
+10 minutes, 49 seconds
+spin up or spin down let's take the spin up particles and put them through another SG apparatus
+10:59
+10 minutes, 59 seconds
+we find that all the particles are deflected up and none are deflected down so according to Bourne's rule the
+11:07
+11 minutes, 7 seconds
+probability of measuring spin up given a spin up state is one and the probability of measuring spin down given a spin up
+11:16
+11 minutes, 16 seconds
+state is zero now let's put an SG apparatus after the down States as you might expect all the
+11:25
+11 minutes, 25 seconds
+particles are deflected down so Bourne's rule tells us the probability of measuring spin down from
+11:32
+11 minutes, 32 seconds
+spin down is one and the probability of measuring spin up from spin down is zero
+11:39
+11 minutes, 39 seconds
+all of these inner product relationships from born's rule give us some useful information about the spin up and spin
+11:47
+11 minutes, 47 seconds
+down state vectors for example it tells us that the spin Upstate has a magnitude of one and the
+11:55
+11 minutes, 55 seconds
+spin down state also has a magnitude of one also the spin up and spin down states are orthogonal since their inner product
+12:04
+12 minutes, 4 seconds
+is zero so in physical space up and down are
+12:10
+12 minutes, 10 seconds
+separated by a turn of 180 degrees but in our Quantum State space where the
+12:17
+12 minutes, 17 seconds
+particle spin States live the spin up and spin down states are orthogonal so they are 90 degrees apart
+12:25
+12 minutes, 25 seconds
+so we're already starting to see that there's an angle doubling relationship between physical space and the quantum
+12:32
+12 minutes, 32 seconds
+State space next we'll try the exact same setup except rotating the SG apparatuses by 90
+Chapter 6: X-oriented S.G. Experiment
+12:42
+12 minutes, 42 seconds
+degrees so that the magnetic fields are oriented in the direction of the x-axis so that particle beams are split into
+12:50
+12 minutes, 50 seconds
+the plus X and minus X directions performing the exact same experiments as
+12:57
+12 minutes, 57 seconds
+above we get born rule formulas for the plus X state and the minus X state
+13:05
+13 minutes, 5 seconds
+these inner product formulas tell us that the plus X and minus X states have magnitudes of one and the plus X and
+13:15
+13 minutes, 15 seconds
+minus X states are orthogonal now let's try something more interesting
+13:21
+13 minutes, 21 seconds
+let's arrange the first SG apparatus so that it points in the X Direction and then send the plus X particle beam
+13:30
+13 minutes, 30 seconds
+through a second SG apparatus pointing in the Z Direction we find that the plus X particle beam is
+13:38
+13 minutes, 38 seconds
+split evenly in the plus set and minus Z directions taking borne's rule again the
+13:45
+13 minutes, 45 seconds
+probability of measuring plus said from plus X is one-half and the probability of measuring minus
+13:52
+13 minutes, 52 seconds
+said from plus X is also one half if we repeat the experiment but starting with the minus X beam instead we also
+14:01
+14 minutes, 1 second
+find a 50 50 split between the plus set and minus Z States so the plus X and minus X states can
+14:10
+14 minutes, 10 seconds
+each collapse into the plus set or minus Z States when a magnetic field in the Z direction is applied
+14:17
+14 minutes, 17 seconds
+this is telling us that the plus X State can be written as a Quantum superposition of the plus Z and minus Z
+14:25
+14 minutes, 25 seconds
+states with the proper coefficients because it can collapse into either one after a measurement
+14:33
+14 minutes, 33 seconds
+and remember Quantum superposition is just a fancy way of saying linear combination
+14:40
+14 minutes, 40 seconds
+in order to get the expected probabilities of one-half from the experiment we need to set the coefficients for plus X to be one over
+14:49
+14 minutes, 49 seconds
+the square root of two and one over the square root of two you can check that applying a plus said
+14:56
+14 minutes, 56 seconds
+bra Vector to a plus Z cat vector and then squaring the results gives us the expected probability of one-half
+15:05
+15 minutes, 5 seconds
+the same goes for applying the negative Z state to the plus X state the minus X state uses the coefficients
+15:14
+15 minutes, 14 seconds
+plus one over the square root of two and minus one over the square root of two this also reproduces the expected
+15:22
+15 minutes, 22 seconds
+probabilities of one-half and importantly this choice of coefficients makes the plus X and minus
+15:30
+15 minutes, 30 seconds
+X states orthogonal with an inner product of zero and also makes each have
+15:36
+15 minutes, 36 seconds
+a magnitude of one as expected looking at our Quantum spin space the
+15:43
+15 minutes, 43 seconds
+plus X and minus X States look like this this continues with the expected angle doubling relationship with physical
+15:52
+15 minutes, 52 seconds
+space where a 45 degree turn in Quantum spin space is a 90 degree turn in physical space
+Chapter 7: Y-oriented S.G. Experiment
+16:01
+16 minutes, 1 second
+next let's look at a pair of SG experiments pointing along the y-axis looking at the born rules we see that
+16:10
+16 minutes, 10 seconds
+the plus Y and minus y states have magnitudes of 1 and are orthogonal if we start with a y aligned SG
+16:18
+16 minutes, 18 seconds
+apparatus and then feed the plus y particle beam into a z-aligned SG apparatus we once again find a 50 50
+16:26
+16 minutes, 26 seconds
+split between the plus Z and minus Z States the same occurs if we begin with the minus y particle beam
+16:35
+16 minutes, 35 seconds
+so the plus Y and minus y States can be written as Quantum superpositions of plus said and minus said because they
+16:43
+16 minutes, 43 seconds
+can collapse into either one but if we want to write the Y States as Quantum superpositions of the plus Z and
+16:52
+16 minutes, 52 seconds
+minus Z States we run into a problem we've already used the coefficients of plus one over the square root of 2 and
+17:01
+17 minutes, 1 second
+-1 over the square root of two for our spin plus X and minus X States and we can't reuse those coefficients
+17:10
+17 minutes, 10 seconds
+so what coefficients can we pick that will still give us probabilities of 50 percent the secret is to start using complex
+17:19
+17 minutes, 19 seconds
+numbers we'll write the plus y State as a superposition of plus Z and minus Z using the coefficients one over the
+17:28
+17 minutes, 28 seconds
+square root of 2 and I over the square root of two if we calculate the inner product of the
+17:34
+17 minutes, 34 seconds
+plus Z and plus y States and then find the squared magnitude we get the expected probability of one-half
+17:43
+17 minutes, 43 seconds
+the same thing happens for the inner product of the minus Z and plus y States the imaginary I goes away when we take
+17:51
+17 minutes, 51 seconds
+the squared amplitude for the minus y State we use coefficients of one over the square root
+17:58
+17 minutes, 58 seconds
+of two and minus I over the square root of 2.
+18:02
+18 minutes, 2 seconds
+this gives the expected probabilities of one-half this also ensures that the plus Y and
+18:10
+18 minutes, 10 seconds
+minus y states are orthogonal with an inner product of zero and also ensures their magnitudes are
+18:18
+18 minutes, 18 seconds
+one as an exercise you can check that the inner product of one of the X states with one of the Y States always gives a
+18:27
+18 minutes, 27 seconds
+squared magnitude of one-half and you can also think about what this means in terms of the results of the
+18:34
+18 minutes, 34 seconds
+corresponding SG experiments so if we look at all the quantum superposition formulas we've written so
+Chapter 8: Bloch Sphere, U(2) Matrices
+18:43
+18 minutes, 43 seconds
+far these relationships exactly match the formulas for the Jones vectors we saw in the previous two videos
+18:51
+18 minutes, 51 seconds
+we can flip back and forth between them using this dictionary it also turns out that we can arrange
+18:59
+18 minutes, 59 seconds
+these six Quantum States on a sphere like this aligning them with the directions and physical space that they
+19:06
+19 minutes, 6 seconds
+actually represent this sphere is called the block sphere this is mathematically equivalent to the
+19:15
+19 minutes, 15 seconds
+point array sphere we saw in the last video where these six main polarizations of light are also arranged on a sphere
+19:24
+19 minutes, 24 seconds
+with LightWave polarizations we could mix the polarizations together in various ways to get any polarization on
+19:33
+19 minutes, 33 seconds
+this sphere including elliptical polarizations similarly we can mix the quantum States
+19:40
+19 minutes, 40 seconds
+in various superpositions to give any state on this sphere these correspond to States associated with SG experiments
+19:50
+19 minutes, 50 seconds
+that are aligned at arbitrary directions in space we showed in the last video that we
+19:57
+19 minutes, 57 seconds
+could rotate vectors across these spheres using two by two unitary matrices written as U2 for short
+20:06
+20 minutes, 6 seconds
+remember rotating a vector PSI with a matrix u means that it's squared magnitude won't change
+20:14
+20 minutes, 14 seconds
+so the squared magnitude formula should be equal before and after the rotation we can show that these matrices must
+20:23
+20 minutes, 23 seconds
+have the property that U inverse equals U dagger which is the definition of a unitary Matrix
+20:31
+20 minutes, 31 seconds
+now it turns out that for rotating these Quantum states on the sphere U2 matrices
+20:38
+20 minutes, 38 seconds
+are too General because we've missed an important fact about born's rule as we already know Bourne's rule tells
+Chapter 9: Global Phase Shifts with Born's Rule, SU(2)
+20:47
+20 minutes, 47 seconds
+us that the probability of measuring a state a collapsing into a state B is the squared magnitude of the inner product
+20:55
+20 minutes, 55 seconds
+of A and B now let's modify the state a by giving it a complex phase Factor e to the I
+21:03
+21 minutes, 3 seconds
+Theta if we now calculate the probability of our new a state collapsing into State B we get the
+21:12
+21 minutes, 12 seconds
+squared magnitude of this inner product the phase e to the I Theta gets a negative sign due to the required
+21:19
+21 minutes, 19 seconds
+hermitian conjugate since e to the I Theta is just a scalar number we can pull it outside of the
+21:27
+21 minutes, 27 seconds
+inner product and here the magnitude of a product is the same thing as the product of the magnitudes and the magnitude of a
+21:36
+21 minutes, 36 seconds
+complex phase e to the I Theta is just one because it lives on the complex unit circle
+21:44
+21 minutes, 44 seconds
+so the probability formula we get is unchanged compared to before so we know that when we measure the
+21:53
+21 minutes, 53 seconds
+state a it can collapse into various other states According to some known probabilities
+22:00
+22 minutes
+and we just learned that when we measure the state a multiplied by a phase Factor it can collapse into the exact same set
+22:08
+22 minutes, 8 seconds
+of states with the exact same probabilities because the states A and A times phase
+22:16
+22 minutes, 16 seconds
+collapse into the exact same states with the exact same probabilities practically speaking there is no difference between
+22:24
+22 minutes, 24 seconds
+them in real quantum mechanics experiments all we can do is perform experiments
+22:30
+22 minutes, 30 seconds
+over and over again and keep score of the results we get if one scientist did experiments with
+22:37
+22 minutes, 37 seconds
+State a and another scientist did experiments with State a times phase they would find all the statistics of
+22:45
+22 minutes, 45 seconds
+their experimental results are the exact same so physically speaking State a and state
+22:52
+22 minutes, 52 seconds
+a times phase are actually the same physical state even if the vectors look different the two vectors give the exact
+23:01
+23 minutes, 1 second
+same physics so in quantum mechanics a physical state is unchanged when we multiply its vector
+23:10
+23 minutes, 10 seconds
+by an overall phase such as I negative 1 or any other complex phase
+23:17
+23 minutes, 17 seconds
+now recall we said that U2 matrices will perform rotations on our block sphere of States but since overall phases don't
+23:27
+23 minutes, 27 seconds
+matter there are multiple U2 matrices that can rotate us to the same output State each Matrix with a different
+23:35
+23 minutes, 35 seconds
+overall phase so there is some redundancy in the group of U2 matrices in order to pick a unique U2 Matrix for
+23:44
+23 minutes, 44 seconds
+doing rotations on our block sphere we pick the specific U2 Matrix whose determinant is one
+23:52
+23 minutes, 52 seconds
+remember we can always set the determinant of a U2 Matrix to plus one by multiplying it by the correct complex
+24:00
+24 minutes
+phase this restricts us to su2 the group of two by two unitary matrices with
+24:07
+24 minutes, 7 seconds
+determinants of plus one so in conclusion the behavior of quantum spin States is mathematically equivalent
+Chapter 10: Conclusion
+24:16
+24 minutes, 16 seconds
+to the behavior of Jones vectors and light polarizations both are represented by two component complex columns which
+24:26
+24 minutes, 26 seconds
+can be represented geometrically on a sphere we can rotate between points on the
+24:32
+24 minutes, 32 seconds
+sphere using su2 matrices since both Quantum States and light polarizations don't care about overall phase factors
+24:41
+24 minutes, 41 seconds
+which includes not caring about overall negative signs in the case of physical space for wave
+24:49
+24 minutes, 49 seconds
+polarizations and the quantum State space for Quantum spin States these are spaces where the overall negative signs
+24:57
+24 minutes, 57 seconds
+are still visible however when we move to the point array sphere and block sphere where the
+25:04
+25 minutes, 4 seconds
+overall phases don't matter there is no difference between a vector's positive version and its negative version
+25:11
+25 minutes, 11 seconds
+so one rotation in the original space corresponds to two rotations on these mathematical spheres where overall
+25:19
+25 minutes, 19 seconds
+negative signs are ignored this is the source of the angle doubling relationships between the two spaces and
+25:27
+25 minutes, 27 seconds
+why these two by one complex columns are called spinners now we've described the basic
+25:34
+25 minutes, 34 seconds
+mathematics of spinners as two by one columns that rotate with su2 matrices and don't care about overall phase
+25:43
+25 minutes, 43 seconds
+factors but it's possible you still find this pretty confusing so in our next video we're going to show how we can visualize
+25:52
+25 minutes, 52 seconds
+Spinners as flag pulls on a sphere and show how these Spinners are really elements of a space called the complex
+26:01
+26 minutes, 1 second
+projective line this will hopefully make all the mysterious mathematical properties of spinners disappear and make them seem
+26:10
+26 minutes, 10 seconds
+more like common sense

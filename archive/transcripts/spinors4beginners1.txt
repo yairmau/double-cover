@@ -1,0 +1,466 @@
+https://youtu.be/j5soqexrwqY
+
+Chapter 1: Introduction
+0:00
+0 seconds
+I often see people online use the phrase “explain like I’m 5” when they want a simple explanation
+0:06
+6 seconds
+of a complicated topic. They might want an explanation of how planes can fly, or how GPS works, explained in a simple way even a 5-year-old could understand.
+0:18
+18 seconds
+A little while ago I came across a post that wanted an “explain like I’m 5”-style
+0:23
+23 seconds
+explanation for mathematical objects called “spinors”. The post only got one response,
+0:30
+30 seconds
+and it started with: “I don’t think spinors are something that can be explained like you’re 5”. Spinors are mathematical objects that come
+0:38
+38 seconds
+up in advanced quantum physics, and they have a reputation for being pretty confusing. If
+0:44
+44 seconds
+you’ve learned any particle physics, you might know that all fundamental particles can be broken up into two categories: the bosons, which, loosely speaking, are the force-carrying
+0:55
+55 seconds
+particles, and fermions, which are the matter-type particles that make up atoms.
+1:02
+1 minute, 2 seconds
+All known fundamental bosons have either spin-1, which are represented by vectors, or have
+1:08
+1 minute, 8 seconds
+spin-0, which are represented by scalars. Vectors and scalars are familiar mathematical
+1:15
+1 minute, 15 seconds
+objects to any undergraduate physics student. However, all known fundamental fermions, have
+1:22
+1 minute, 22 seconds
+spin-1/2, and these are represented by spinors. So around half of all known fundamental particles are described by spinors… but what exactly does that mean?
+1:33
+1 minute, 33 seconds
+A first introduction to spinors will normally explain them in terms of how they transform.
+1:40
+1 minute, 40 seconds
+Euclidean vectors are basically just pointed sticks, (arrows), and when we turn them around
+1:46
+1 minute, 46 seconds
+360-degrees, they end up back where they started. But when we turn spinors around 360-degrees,
+1:54
+1 minute, 54 seconds
+they come back to the negative version of themselves. It requires two full turns, or 720-degrees, to get a spinor back to where it started.
+2:04
+2 minutes, 4 seconds
+This property of requiring 2 full turns to get back to the starting position is one of
+2:10
+2 minutes, 10 seconds
+the defining properties of spinors. And this is demonstrated by Dirac’s belt trick. If
+2:16
+2 minutes, 16 seconds
+we turn the free end of this belt once, we get a twist that cannot be removed by translating
+2:22
+2 minutes, 22 seconds
+the free end around. However, after a second turn, we can remove the twist by moving the
+2:28
+2 minutes, 28 seconds
+free end like this. A similar trick can be done by holding a cup or a plate. One turn
+2:36
+2 minutes, 36 seconds
+leaves your arm with a twist… and a second turn gets you back to where you started.
+2:42
+2 minutes, 42 seconds
+Now, these are cute tricks, but when I started seriously learning the mathematics of spinors, I found most textbooks were incredibly hard to follow, and I was left confused and frustrated.
+2:54
+2 minutes, 54 seconds
+I’ve spent over a year studying spinors, and at this point I think I have the basics
+Chapter 2: List of Topics ("Staircase")
+3:00
+3 minutes
+down. My goal now is to make a video series that lays out the basics of spinors at a level
+3:06
+3 minutes, 6 seconds
+appropriate for undergraduate students or early graduate students, so that they don’t have to waste as much time being confused like I did.
+3:16
+3 minutes, 16 seconds
+Like most complicated topics, I think it’s best to learn spinors in stages, as if you’re
+3:22
+3 minutes, 22 seconds
+climbing the stairs on a staircase, starting with the easiest and most basic explanation,
+3:28
+3 minutes, 28 seconds
+and gradually getting more complicated and abstract. My planned staircase has 5 steps:
+3:35
+3 minutes, 35 seconds
+basic examples of spinors in physics, viewing spinors as the “square roots” of vectors,
+3:41
+3 minutes, 41 seconds
+viewing spinors as members of Clifford algebras, viewing spinors in terms of Lie groups and
+3:46
+3 minutes, 46 seconds
+Lie algebras, and finally talking a bit about how spinors are used to describe all spin-1/2 particles in particle physics and quantum field theory.
+3:58
+3 minutes, 58 seconds
+So for the rest of this video I’m going to give an overview of the steps in this staircase.
+4:04
+4 minutes, 4 seconds
+You probably won’t understand a lot of what I say, but right now I’m just trying to give you a basic roadmap of the ideas that will come later. I’ll dig into the details
+4:15
+4 minutes, 15 seconds
+as the video series goes on. So, a good place to start learning spinors
+Chapter 3: Basic Examples of Spinors in Phyiscs
+4:21
+4 minutes, 21 seconds
+are examples from physics: such as basic quantum spin states, and the polarization of light
+4:28
+4 minutes, 28 seconds
+waves. In introductory quantum mechanics, when learn that putting electrically neutral silver atoms particles through a magnetic field forces
+4:37
+4 minutes, 37 seconds
+them to choose between one of two states: either spin up or spin down. In physical space,
+4:44
+4 minutes, 44 seconds
+up and down point in opposite directions, 180-degrees apart. But the quantum spin-up
+4:51
+4 minutes, 51 seconds
+and spin-down states of a particle don’t live in physical space. Instead, they live
+4:57
+4 minutes, 57 seconds
+in an abstract state space. The rules of quantum mechanics tell us that: when two states are
+5:04
+5 minutes, 4 seconds
+mutually exclusive, they must be orthogonal. The spin-up and spin-down states of an electron
+5:11
+5 minutes, 11 seconds
+are mutually exclusive, and so they are orthogonal, separated by 90-degrees. So here we see there’s
+5:20
+5 minutes, 20 seconds
+an angle-doubling relationship between these two spaces. A 90-degree turn in abstract state
+5:27
+5 minutes, 27 seconds
+space corresponds to a 180-turn in physical space. This means that doing a full-turn in
+5:35
+5 minutes, 35 seconds
+the state space corresponds to 2 full turns in physical space. Requiring 2 full turns
+5:42
+5 minutes, 42 seconds
+to get back where we started is exactly what we expect from spinors, and so matter particles
+5:48
+5 minutes, 48 seconds
+are best described using spinors. We can write a spinor as a 2-component column, where the
+5:56
+5 minutes, 56 seconds
+two components indicate the probabilities for measuring spin-up or spin-down from a
+6:01
+6 minutes, 1 second
+given quantum state. Another example of spinors comes from classical
+6:07
+6 minutes, 7 seconds
+physics, where light is described as a wave. The orientation of this wave is called its
+6:14
+6 minutes, 14 seconds
+“polarization”. Two basic kinds of polarization are vertical polarization and horizontal polarization.
+6:22
+6 minutes, 22 seconds
+If we take a vertically polarized wave and rotate it 90-degrees, it becomes horizontally
+6:28
+6 minutes, 28 seconds
+polarized. After another 90-degree rotation, it becomes vertically polarized again, although
+6:35
+6 minutes, 35 seconds
+with its phase shifted by half a cycle. Again, we have an angle-doubling relationship between
+6:43
+6 minutes, 43 seconds
+physical space and the polarization state space. A half-turn in physical space corresponds
+6:49
+6 minutes, 49 seconds
+to a full turn in polarization state space. While this is not the exact same as our example
+6:56
+6 minutes, 56 seconds
+with quantum spin states, it does turn out that we can describe polarization states of
+7:02
+7 minutes, 2 seconds
+light using spinors. Once again we can write the spinor as a 2-coponent column, where the
+7:09
+7 minutes, 9 seconds
+two components indicate the amounts of vertically and horizontally polarized waves inside a given light wave. It's worth noting that this is a purely classical
+7:19
+7 minutes, 19 seconds
+effect with no quantum mechanics at all. Spinors are just mathematical objects, and while they
+7:25
+7 minutes, 25 seconds
+are very important in quantum mechanics, they can be used to describe things in classical physics too. Now that we have some motivation from physics,
+Chapter 4: Spinors as Square Roots of Vectors
+7:35
+7 minutes, 35 seconds
+the next step is to discuss spinors from a purely mathematical point of view. Here we learn that “spinors are like the square roots of vectors”. This means we can take
+7:45
+7 minutes, 45 seconds
+a 3D vector and use a special trick to factor it into a column spinor and a row spinor.
+7:53
+7 minutes, 53 seconds
+With a matrix, which is a rank-2 tensor, we can sometimes factor the matrix into a column
+7:58
+7 minutes, 58 seconds
+vector and a row vector, which are both rank-1 tensors. So we can factor a rank-2 tensor
+8:06
+8 minutes, 6 seconds
+into a pair of rank-1 tensors. Now, if we have a vector in 3D space, with components
+8:13
+8 minutes, 13 seconds
+xyz, we can use a special trick to write it as a 2x2 matrix called a Pauli vector. This
+8:21
+8 minutes, 21 seconds
+is done by multiplying each component of the vector by the sigma matrices. We can then factor this 2x2 Pauli vector into a column spinor and a row spinor, called Pauli spinors.
+8:35
+8 minutes, 35 seconds
+So loosely speaking, we’re factoring a vector, which is a rank-1 tensor, into 2 spinors,
+8:43
+8 minutes, 43 seconds
+which are like rank-1/2 tensors. Now, when we want to rotate a 3D vector, we
+8:50
+8 minutes, 50 seconds
+usually use a 3x3 rotation matrix like this. But when we re-write our 3D vector as a 2x2
+8:58
+8 minutes, 58 seconds
+Pauli vector, rotating the x, y and z components is instead done with a pair of rotation matrices—one
+9:06
+9 minutes, 6 seconds
+on each side. Each matrix is responsible for half of the rotation. If we then factor our
+9:14
+9 minutes, 14 seconds
+Pauli vector into a pair of Pauli spinors, notice that each spinor only gets one rotation
+9:21
+9 minutes, 21 seconds
+matrix. So each spinor only rotates half as much as the vector does, just like we saw with and quantum spin states and polarization states of light.
+9:33
+9 minutes, 33 seconds
+So when looking at all the different ranks of tensors, we can think of spinors as fitting in right here. Spinors are sort of like a tensor of rank “one half”, because we
+9:43
+9 minutes, 43 seconds
+can combine two spinors into a rank-1 tensor, and because spinors transform half as much
+9:50
+9 minutes, 50 seconds
+as vectors do. While Pauli spinors are associated with rotations
+9:55
+9 minutes, 55 seconds
+in 3D space, in special relativity it’s also possible to get spinors associated with
+10:02
+10 minutes, 2 seconds
+4-dimensional spacetime, which are called Weyl spinors. This is a bit confusing, as
+10:09
+10 minutes, 9 seconds
+Pauli spinors and Weyl spinors are different kinds objects, but they look like 2-component columns. We’ll clear the difference between them in future videos.
+10:20
+10 minutes, 20 seconds
+The next step in the staircase is Clifford Algebras. Clifford algebras are a bit abstract,
+Chapter 5: Spinors as members of Clifford Algebras
+10:28
+10 minutes, 28 seconds
+but they help us define spinors in any dimension, not just 3 or 4 dimensions.
+10:35
+10 minutes, 35 seconds
+Most physics students are familiar with scalars and vectors, but sometimes in physics it’s more useful to use their higher-dimensional analogues: bivectors, trivectors, and so on.
+10:48
+10 minutes, 48 seconds
+For example, it’s much more natural to represent angular momentum using a bivector, which is
+10:55
+10 minutes, 55 seconds
+an oriented plane, instead of using a vector, which requires the awkward right-hand rule
+11:00
+11 minutes
+to make sense of. We can build these “bivectors” using the
+11:05
+11 minutes, 5 seconds
+“wedge product”. The wedge product of vectors U and V is a plane formed by the vectors
+11:12
+11 minutes, 12 seconds
+U and V, with an orientation that follows the arrows. If we swap the order of the vector,
+11:19
+11 minutes, 19 seconds
+we get the same plane, but with the opposite orientation. These are called a bivector,
+11:26
+11 minutes, 26 seconds
+and it’s a much more straightforward way of representing rotations. With the wedge
+11:31
+11 minutes, 31 seconds
+product, we can build bivectors, trivectors, and the other higher-dimensional multi-vectors,
+11:38
+11 minutes, 38 seconds
+which make it easier to represent geometric ideas in physics without having to rely on
+11:44
+11 minutes, 44 seconds
+vectors for everything. An algebra with the wedge product is called
+11:50
+11 minutes, 50 seconds
+a Grassman Algebra, or sometimes an Exterior Algebra. When an algebra has both a wedge
+11:57
+11 minutes, 57 seconds
+product AND a dot product, we call it a Clifford algebra, also called a geometric algebra.
+12:04
+12 minutes, 4 seconds
+The Clifford product of two vectors is like a combination of the dot product and wedge
+12:09
+12 minutes, 9 seconds
+product. In the clifford algebra for 3D space, the basis vectors are the sigmas we saw before,
+12:18
+12 minutes, 18 seconds
+and in 4D spacetime, the basis vectors are the gammas.
+12:23
+12 minutes, 23 seconds
+In Clifford algebras, vectors are also rotated using double-sided transformations, just as
+12:29
+12 minutes, 29 seconds
+we saw with Pauli vectors. Spinors also arise naturally in Clifford algebras for free. Here
+12:37
+12 minutes, 37 seconds
+we can see the spin up and spin-down states from quantum mechanics represented in a Clifford
+12:43
+12 minutes, 43 seconds
+algebra. We’ll see that spinors can be defined as members of minimal left ideals in Clifford
+12:50
+12 minutes, 50 seconds
+algebras. This is a pretty abstract-sounding definition, but we’ll approach it slowly
+12:56
+12 minutes, 56 seconds
+over several videos, step-by-step. Ultimately, this is just a set of instructions for writing
+13:04
+13 minutes, 4 seconds
+spinors using the right combinations of scalars, vectors, and bivectors, and it works in any
+13:10
+13 minutes, 10 seconds
+dimension. Now, while being able to define spinors in any dimension is nice, when it comes to physics, the most important spinors are associated
+Chapter 6: Spinors in terms of Lie Groups/Algebras
+13:21
+13 minutes, 21 seconds
+with 3-dimensional space and 4-dimensional spacetime: Pauli Spinors and Weyl Spinors.
+13:29
+13 minutes, 29 seconds
+In particle physics, each type of particle has its own spin value, with all known fundamental
+13:35
+13 minutes, 35 seconds
+particles being either spin-0, spin-½, or spin-1. Composite particles can have higher
+13:42
+13 minutes, 42 seconds
+spin, like spin-3/2, and the theoretical graviton has spin-2.
+13:49
+13 minutes, 49 seconds
+Any theory of quantum mechanics that incorporates relativity will require us to understand how
+13:55
+13 minutes, 55 seconds
+the different particle types transform under a change of reference frame. To understand this, we need to learn the theory of Lie Groups and Lie algebras.
+14:05
+14 minutes, 5 seconds
+If we exponentiate this 3x3 matrix here, times theta, we get a rotation matrix in the XY
+14:12
+14 minutes, 12 seconds
+plane. We say that this rotation matrix is part of the Lie Group SO(3), and this matrix
+14:20
+14 minutes, 20 seconds
+we exponentiate is called a “generator”, and is part of the Lie algebra so(3). There
+14:27
+14 minutes, 27 seconds
+are generators for all the 3x3 rotation matrices, and the generators follow special commutation
+14:34
+14 minutes, 34 seconds
+relations, which is why they form a Lie Algebra. If we use these commutation relations as a
+14:42
+14 minutes, 42 seconds
+starting point, we can find many generator matrices of all different sizes that satisfy
+14:48
+14 minutes, 48 seconds
+them. When we exponentiate these generators, we get rotation matrices for all the different
+14:55
+14 minutes, 55 seconds
+particle types. The 3x3 matrices rotate standard 3D vectors, the 2x2 matrices rotate Pauli
+15:05
+15 minutes, 5 seconds
+spinors, and the other matrices rotate particles with other spins.
+15:10
+15 minutes, 10 seconds
+So looking at different matrices that come out of this Lie Algebra gives us a recipe for rotating particles with different spins in 3-dimensions.
+15:21
+15 minutes, 21 seconds
+We can follow similar reasoning for Lorentz Transformations in special relativity, with
+15:26
+15 minutes, 26 seconds
+Lie group SO(1,3), which has 6 generators. And this tells us how to transform Weyl spinors and particles of other spins according to Lorentz transformations.
+15:39
+15 minutes, 39 seconds
+At this point we’ll have most of the math required for understanding spinors, so we’ll
+Chapter 7: Spinors in QFT
+15:46
+15 minutes, 46 seconds
+look at how they are used in particle physics. Modern particle physics treats particles as
+15:52
+15 minutes, 52 seconds
+excitations in various fields. For example, an electron is an excitation in the electron
+15:59
+15 minutes, 59 seconds
+field, and a photon is an excitation in the photon field. The spin-0 Higgs Field is a
+16:06
+16 minutes, 6 seconds
+scalar field, the spin-1 force-carrying particles are each vector fields, and the various spin-1/2
+16:14
+16 minutes, 14 seconds
+matter particles each have spinor fields. The study of these fields is called Quantum
+16:21
+16 minutes, 21 seconds
+Field Theory, or "QFT", and the interactions between the various fields are modelled by
+16:28
+16 minutes, 28 seconds
+an enormous formula called the Standard Model Lagrangian. Any terms in this formula that
+16:35
+16 minutes, 35 seconds
+contain a pair of fields represent an interaction between those fields. For example, this term
+16:42
+16 minutes, 42 seconds
+represents the electron spinor field interacting with the photon vector field.
+16:49
+16 minutes, 49 seconds
+Spinors in quantum field theory are 4-component columns called “Dirac Spinors”, which
+16:55
+16 minutes, 55 seconds
+are really a pair of 2-component Weyl spinors, one having left-handed Chirality and the other
+17:02
+17 minutes, 2 seconds
+having right-handed chirality. Ordinary tensors only have two index types: upper and lower…
+17:10
+17 minutes, 10 seconds
+but because Weyl spinors come in both left-handed and right-handed versions… they require
+17:16
+17 minutes, 16 seconds
+4 index types, using dots for right-handed and no dots for left-handed spinors. This
+17:23
+17 minutes, 23 seconds
+notation is called the Van der Warden notation. One interesting fact is that the Weak Nuclear
+17:31
+17 minutes, 31 seconds
+Force is only known to interact with left-handed particles, so reflecting the universe in a
+17:37
+17 minutes, 37 seconds
+mirror, or equivalently, swapping all the left and right-handed particles in the formula,
+17:43
+17 minutes, 43 seconds
+does not result in the same physics. And studying Quantum Field Theory. will help us understand, how the various forces, like the weak force, interact with the various spinor matter particles.
+17:56
+17 minutes, 56 seconds
+The study of Quantum Field theory can last several semesters in gradual school, so in this series I’ll only be scratching the surface of how spinors are used in it.
+Chapter 8: Conclusion
+18:09
+18 minutes, 9 seconds
+So I realize if you’ve never studied spinors before, everything I just said was a lot to take in. You don’t need to understand any of it now. I’m just trying to give you a
+18:19
+18 minutes, 19 seconds
+basic roadmap for where this video series is going. I also don’t expect everyone to
+18:24
+18 minutes, 24 seconds
+finish every single video in the series. Some people might have their curiosity satisfied
+18:30
+18 minutes, 30 seconds
+after the first couple steps, and decide they don’t need to watch any more, and that's fine fine. But I’m hoping that anyone who wants to learn about spinors in any level
+18:40
+18 minutes, 40 seconds
+of detail will find this video series helpful in untangling a rather confusing topic in
+18:46
+18 minutes, 46 seconds
+physics. So if you’re interested in watching more, I’ve left a link to the playlist in the description, and we’ll start with learning some basic examples of how spinors are used in physics.
