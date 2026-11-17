@@ -7,6 +7,7 @@ book:
   author: "Yair Mau"
   repo-url: https://github.com/yairmau/double-cover/
   favicon: archive/logo/favicon-32.svg
+  google-analytics: "G-43N4LS3BPR"
   chapters:
     - index.qmd
     - part: "math fundamentals"
