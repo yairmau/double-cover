@@ -12,8 +12,8 @@ book:
     - index.qmd
     - part: "math fundamentals"
       chapters:
-        - math_fundamentals/det_exp_trace.ipynb
         - math_fundamentals/conjugation.ipynb
+        - math_fundamentals/det_exp_trace.ipynb
     - part: "spinors for beginners"
       chapters:
         - spinors_for_beginners/jones_vectors.qmd

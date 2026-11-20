@@ -52,3 +52,10 @@ table td {
 #quarto-sidebar-header {
   margin-bottom: 0.25rem;
 }
+
+// Quarto's built-in callout CSS shrinks text to .9rem; match surrounding prose instead.
+// Selector specificity must match Quarto's own rule (.callout.callout-style-*) or it loses.
+.callout.callout-style-simple .callout-body,
+.callout.callout-style-default .callout-body {
+  font-size: 1rem;
+}
